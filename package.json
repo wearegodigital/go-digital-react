@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass-chokidar": "0.0.3",
     "react": "^16.0.0",
+    "react-burger-menu": "^2.2.3",
     "react-dom": "^16.0.0",
+    "react-interactive": "^0.8.1",
     "react-redux": "^5.0.6",
+    "react-responsive": "^4.0.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "react-styleguidist": "^6.0.31",
@@ -15,8 +19,14 @@
   "scripts": {
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "NODE_PATH=src react-scripts start",
     "build": "react-scripts build",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

@@ -1,9 +1,11 @@
-import '../../style/tachyons.min.css';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MenuNavBar from '../02-molecule/menu-navbar';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import MediaQuery from 'react-responsive';
+import { reveal as Menu } from 'react-burger-menu'
 
-import Logo from '../../assets/logo/Logo - Inline.svg';
+import MobileNavBar from './components/02-molecule/navigation/mobile-navbar'
+import DesktopNavBar from './components/02-molecule/navigation/desktop-navbar'
 
 var navBarStyle = {
   backgroundColor: "#B64F59",

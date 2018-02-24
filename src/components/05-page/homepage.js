@@ -1,14 +1,13 @@
-import '../../style/tachyons.min.css';
 import React, { Component } from 'react';
 
 class HomePage extends Component {
   render() {
     return(
       <div>
-        <div className='ph6 mt3 vh-75 bl'>
-          <h1 className='dib v-mid'> Homepage H1 </h1>
+        <div>
+          <h1> Homepage H1 </h1>
         </div>
-        <div className='ph6 mt3 fl w-100'>
+        <div>
           <h2> Homepage H2 </h2>
           <h3> Homepage H3 </h3>
           <h4> Homepage H4 </h4>

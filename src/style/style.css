@@ -1,0 +1,222 @@
+/*body {
+  height: 100% !important;
+  width: 100% !important;
+  background-color: #1D2D58;
+}*/
+
+@media (max-width: 320px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/* 12px @ 320px increasing to 14px @ 768px */
+@media (min-width: 320px) {
+  :root {
+    font-size: calc(0.75rem + ((1vw - 3.2px) * 0.4464));
+    /* Where: * 0.4464 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+html {font-size: 1em;}
+
+body {
+  font-family: 'raleway';
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: #1d2d58;
+  margin:0;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0 !important;
+  font-size: 6.854em !important;
+  font-family: 'cabin';
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4.236em;
+  font-family: 'cabin';
+  font-weight: 600;
+}
+
+h3,.bm-item-list {
+  font-size: 2.618em;
+  font-family: 'cabin';
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.618em;
+  font-weight: 500;
+}
+
+small, .font_small {font-size: 0.618em;}
+
+
+h1, h2 {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/*
+  Menu Styling
+*/
+
+/* Background Gradient */
+
+.navmenu {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(75%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+
+/* Position and sizing of burger button */
+@media screen and (max-width:959px){
+  .bm-burger-button, .bm-cross-button {
+      position: fixed;
+      width: 20px;
+      height: 18px;
+      right: 16px;
+      top: 39px;
+  }
+}
+
+@media screen and (min-width:960px){
+  .bm-burger-button, .bm-cross-button {
+      position: fixed;
+      width: 24px;
+      height: 24px;
+      right: 32px;
+      top: 52px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background-color: #1D2D58;
+}
+
+.bm-burger-bars button:hover {
+  background-color: #B64F59;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 32px;
+  width: 32px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #B64F59;
+  width: 4px;
+  height: 28px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #1D2D58;
+  text-align: right;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #B64F59;
+  margin-top: 96px;
+}
+
+.bm-item-list a {
+  color: #B64F59;
+  text-decoration: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Background of Body */
+#page-wrap {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+}
+
+/* Text Colours */
+
+.primaryColour {
+  color: #1D2D58;
+}
+
+.secondaryColour {
+  color: #B64F59;
+}
+
+.accent1Colour {
+  color: #51A3A3;
+}
+
+.accent2Colour {
+  color: #EAD94C;
+}
+
+.accent3Colour {
+  color: #DD7373;
+}
+
+.blackColour {
+  color: rgba(12,18,35,1);
+}
+
+.whiteColour {
+  color: rgba(255,255,255,1);
+}
