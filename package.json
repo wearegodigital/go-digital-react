@@ -14,8 +14,7 @@
     "react-scripts": "1.0.14",
     "react-styleguidist": "^6.0.31",
     "redux": "^3.7.2",
-    "redux-promise": "^0.5.3",
-    "npm-run-all": "^4.1.2"
+    "redux-promise": "^0.5.3"
   },
   "scripts": {
     "styleguide": "styleguidist server",
@@ -30,6 +29,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.2",
     "tachyons": "^4.8.1"
   }
 }
