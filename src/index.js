@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import promise from 'redux-promise';
 import registerServiceWorker from './registerServiceWorker';
 import MediaQuery from 'react-responsive';
-import HttpsRedirect from 'react-https-redirect';
 
 import './style/style.css';
 
@@ -25,7 +24,6 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <HttpsRedirect>
       <BrowserRouter>
         <div id="outer-container">
           <MenuPush/>
@@ -47,7 +45,6 @@ ReactDOM.render(
           </main>
         </div>
       </BrowserRouter>
-    </HttpsRedirect>
   </Provider>
   , document.querySelector('#root'));
 
