@@ -28,7 +28,7 @@ class AccentButton extends Component {
    onClick (e) {
      this.setState({shadowMargin : '8px',
                     fillColour: Colours.white,
-                    textColour: Colours.primary
+                    textColour: Colours.primary,
                     redirect: true})
    }
 

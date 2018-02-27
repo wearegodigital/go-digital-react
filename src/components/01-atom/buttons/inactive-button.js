@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import Colours from "../../00-style/colours.js";
 
 class InactiveButton extends Component {
@@ -7,7 +8,8 @@ class InactiveButton extends Component {
      super();
      this.state = { shadowMargin : '0px',
                     fillColour: Colours.white,
-                    textColour: Colours.primary
+                    textColour: Colours.primary,
+                    redirect: false
                     }
    }
 
@@ -26,7 +28,8 @@ class InactiveButton extends Component {
    onClick (e) {
      this.setState({shadowMargin : '8px',
                     fillColour: Colours.secondary,
-                    textColour: Colours.white})
+                    textColour: Colours.white,
+                    redirect: true})
    }
 
   render() {
@@ -88,7 +91,10 @@ class InactiveButton extends Component {
       height: '100%',
       width: '100%'
     }
-
+    
+    if (this.state.redirect) {
+      return <Redirect push to={this.props.link} />;
+    }
 
     return (
       <div  style={boxContainer}
