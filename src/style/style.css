@@ -220,3 +220,36 @@ h1, h2 {
 .whiteColour {
   color: rgba(255,255,255,1);
 }
+
+/* Animated Background of Placeholder Text */
+
+@-webkit-keyframes placeholderLoading {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+@-moz-keyframes placeholderLoading {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+@-o-keyframes placeholderLoading {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+@keyframes placeholderLoading {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+
+.phText, .phHeader {
+  background: linear-gradient(270deg, #b64f59, #e3bbbf);
+  background-size: 400% 400%;
+
+  -webkit-animation: placeholderLoading 2s ease infinite;
+  -moz-animation: placeholderLoading 2s ease infinite;
+  -o-animation: placeholderLoading 2s ease infinite;
+  animation: placeholderLoading 2s ease infinite;
+}
