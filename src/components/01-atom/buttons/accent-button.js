@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import Colours from "../../00-style/colours.js";
 
 class AccentButton extends Component {
@@ -8,6 +9,7 @@ class AccentButton extends Component {
      this.state = { shadowMargin : '0px',
                     fillColour: Colours.secondary,
                     textColour: Colours.white,
+                    redirect: false
                     }
    }
 
@@ -26,7 +28,8 @@ class AccentButton extends Component {
    onClick (e) {
      this.setState({shadowMargin : '8px',
                     fillColour: Colours.white,
-                    textColour: Colours.primary})
+                    textColour: Colours.primary
+                    redirect: true})
    }
 
   render() {
@@ -87,6 +90,10 @@ class AccentButton extends Component {
       margin: '8px 0 0 8px',
       height: '100%',
       width: '100%'
+    }
+
+    if (this.state.redirect) {
+      return <Redirect push to={this.props.link} />;
     }
 
 

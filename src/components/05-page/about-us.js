@@ -46,9 +46,9 @@ class AboutUs extends Component {
               text={text}/>
               <div style={{...buttonGroup,...{margin:'48px 64px'}}}>
                 <InactiveButton height='64px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/portfolio' />
                 <AccentButton height='64px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/contact-us'/>
               </div>
         </MediaQuery>
         <MediaQuery minWidth={Breakpoints.mobile} maxWidth={Breakpoints.desktop - 1}>
@@ -65,9 +65,9 @@ class AboutUs extends Component {
               text={text}/>
               <div style={{...buttonGroup,...{margin:'32px'}}}>
                 <InactiveButton height='64px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/portfolio' />
                 <AccentButton height='64px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/contact-us'/>
               </div>
         </MediaQuery>
         <MediaQuery maxWidth={Breakpoints.mobile - 1}>
@@ -84,9 +84,9 @@ class AboutUs extends Component {
               text={text}/>
               <div style={{...buttonGroup,...{margin:'16px 32px'}}}>
                 <InactiveButton height='40px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/portfolio' />
                 <AccentButton height='40px' width='192px' maxWidth='300px' text='Test Button'
-                  margin='16px 32px 16px 0' />
+                  margin='16px 32px 16px 0' link='/contact-us' />
               </div>
         </MediaQuery>
       </div>
