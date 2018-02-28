@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { HashRouter, Route, Switch} from 'react-router-dom';
 import promise from 'redux-promise';
 import registerServiceWorker from './registerServiceWorker';
 import MediaQuery from 'react-responsive';
@@ -24,7 +24,7 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-      <BrowserRouter>
+      <HashRouter>
         <div id="outer-container">
           <MenuPush/>
           <main id="page-wrap">
@@ -44,7 +44,7 @@ ReactDOM.render(
             </Switch>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
   </Provider>
   , document.querySelector('#root'));
 
