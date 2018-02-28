@@ -1,0 +1,331 @@
+.st0{display:none;}
+.st1{display:inline;fill:#1D2D58;}
+.st2{display:inline;}
+.st3{fill:#1D2D58;}
+.st4{fill:#FFFFFF;}
+.st5{fill:none;stroke:#1D2D58;stroke-width:110;stroke-linecap:round;stroke-miterlimit:10;}
+.st6{fill:none;stroke:#1D2D58;stroke-width:117;stroke-linecap:round;stroke-miterlimit:10;}
+.st7{fill:none;stroke:#FFFFFF;stroke-width:62;stroke-linecap:round;stroke-miterlimit:10;}
+.st8{fill:none;stroke:#1D2D58;stroke-width:26;stroke-linecap:round;stroke-miterlimit:10;}
+.st9{fill:none;stroke:#B64F59;stroke-width:30;stroke-linecap:round;stroke-miterlimit:10;}
+
+.BJIClkuA_0 {
+	stroke-dasharray: 621 623;
+	stroke-dashoffset: 622;
+	animation: BJIClkuA_draw_0 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_1 {
+	stroke-dasharray: 393 395;
+	stroke-dashoffset: 394;
+	animation: BJIClkuA_draw_1 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_2 {
+	stroke-dasharray: 20 22;
+	stroke-dashoffset: 21;
+	animation: BJIClkuA_draw_2 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_3 {
+	stroke-dasharray: 22 24;
+	stroke-dashoffset: 23;
+	animation: BJIClkuA_draw_3 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_4 {
+	stroke-dasharray: 25 27;
+	stroke-dashoffset: 26;
+	animation: BJIClkuA_draw_4 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_5 {
+	stroke-dasharray: 53 55;
+	stroke-dashoffset: 54;
+	animation: BJIClkuA_draw_5 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_6 {
+	stroke-dasharray: 4 6;
+	stroke-dashoffset: 5;
+	animation: BJIClkuA_draw_6 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_7 {
+	stroke-dasharray: 9746 9748;
+	stroke-dashoffset: 9747;
+	animation: BJIClkuA_draw_7 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_8 {
+	stroke-dasharray: 730 732;
+	stroke-dashoffset: 731;
+	animation: BJIClkuA_draw_8 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_9 {
+	stroke-dasharray: 3 5;
+	stroke-dashoffset: 4;
+	animation: BJIClkuA_draw_9 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_10 {
+	stroke-dasharray: 30 32;
+	stroke-dashoffset: 31;
+	animation: BJIClkuA_draw_10 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_11 {
+	stroke-dasharray: 6 8;
+	stroke-dashoffset: 7;
+	animation: BJIClkuA_draw_11 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_12 {
+	stroke-dasharray: 701 703;
+	stroke-dashoffset: 702;
+	animation: BJIClkuA_draw_12 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_13 {
+	stroke-dasharray: 2995 2997;
+	stroke-dashoffset: 2996;
+	animation: BJIClkuA_draw_13 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_14 {
+	stroke-dasharray: 2995 2997;
+	stroke-dashoffset: 2996;
+	animation: BJIClkuA_draw_14 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_15 {
+	stroke-dasharray: 249 251;
+	stroke-dashoffset: 250;
+	animation: BJIClkuA_draw_15 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_16 {
+	stroke-dasharray: 0 2;
+	stroke-dashoffset: 1;
+	animation: BJIClkuA_draw_16 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_17 {
+	stroke-dasharray: 3062 3064;
+	stroke-dashoffset: 3063;
+	animation: BJIClkuA_draw_17 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+.BJIClkuA_18 {
+	stroke-dasharray: 287 289;
+	stroke-dashoffset: 288;
+	animation: BJIClkuA_draw_18 4050ms linear 0ms infinite, BJIClkuA_fade 4050ms linear 0ms infinite;
+}
+@keyframes BJIClkuA_draw {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_fade {
+	0% {
+		stroke-opacity: 1;
+	}
+	98.76543209876543% {
+		stroke-opacity: 1;
+	}
+	100% {
+		stroke-opacity: 0;
+	}
+}
+@keyframes BJIClkuA_draw_0 {
+	4.938271604938271% {
+		stroke-dashoffset: 622
+	}
+	54.32098765432099% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_1 {
+	6.310013717421124% {
+		stroke-dashoffset: 394
+	}
+	55.692729766803836% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_2 {
+	7.681755829903977% {
+		stroke-dashoffset: 21
+	}
+	57.06447187928671% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_3 {
+	9.053497942386832% {
+		stroke-dashoffset: 23
+	}
+	58.43621399176955% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_4 {
+	10.425240054869684% {
+		stroke-dashoffset: 26
+	}
+	59.807956104252405% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_5 {
+	11.796982167352537% {
+		stroke-dashoffset: 54
+	}
+	61.179698216735254% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_6 {
+	13.168724279835391% {
+		stroke-dashoffset: 5
+	}
+	62.55144032921811% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_7 {
+	14.540466392318244% {
+		stroke-dashoffset: 9747
+	}
+	63.92318244170095% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_8 {
+	15.912208504801098% {
+		stroke-dashoffset: 731
+	}
+	65.29492455418381% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_9 {
+	17.28395061728395% {
+		stroke-dashoffset: 4
+	}
+	66.66666666666666% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_10 {
+	18.655692729766805% {
+		stroke-dashoffset: 31
+	}
+	68.03840877914952% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_11 {
+	20.027434842249654% {
+		stroke-dashoffset: 7
+	}
+	69.41015089163238% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_12 {
+	21.399176954732514% {
+		stroke-dashoffset: 702
+	}
+	70.78189300411523% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_13 {
+	22.770919067215363% {
+		stroke-dashoffset: 2996
+	}
+	72.15363511659808% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_14 {
+	24.14266117969822% {
+		stroke-dashoffset: 2996
+	}
+	73.52537722908093% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_15 {
+	25.514403292181075% {
+		stroke-dashoffset: 250
+	}
+	74.8971193415638% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_16 {
+	26.886145404663925% {
+		stroke-dashoffset: 1
+	}
+	76.26886145404663% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_17 {
+	28.257887517146774% {
+		stroke-dashoffset: 3063
+	}
+	77.64060356652949% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes BJIClkuA_draw_18 {
+	29.629629629629626% {
+		stroke-dashoffset: 288
+	}
+	79.01234567901234% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

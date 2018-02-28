@@ -253,3 +253,10 @@ h1, h2 {
   -o-animation: placeholderLoading 2s ease infinite;
   animation: placeholderLoading 2s ease infinite;
 }
+
+/* Preloader Formatting */
+
+#Layer_1 {
+  width: 100vw;
+  height: 100vh;
+}
