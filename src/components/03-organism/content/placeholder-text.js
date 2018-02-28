@@ -10,7 +10,8 @@ class PlaceholderText extends Component {
         height: '2em',
         backgroundColor: Colours.secondary,
         opacity: '0.7',
-        margin: '16px auto 16px 16px'
+        margin: '16px auto 16px 16px',
+        borderRadius: '4px'
       });
     }
     const header = {
@@ -18,7 +19,8 @@ class PlaceholderText extends Component {
       height: '3.6em',
       backgroundColor: Colours.secondary,
       opacity: '0.7',
-      margin: '16px auto 32px 16px'
+      margin: '16px auto 32px 16px',
+      borderRadius: '4px'
     }
 
     return(
