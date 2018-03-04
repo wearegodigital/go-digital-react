@@ -86,26 +86,28 @@ class InactiveButton extends Component {
       borderWidth: '4px',
       borderColor: Colours.secondary,
       borderRadius: '4px',
-      background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0) 8px)`,
+      background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
       margin: '8px 0 0 8px',
       height: '100%',
       width: '100%'
     }
-    
+
     if (this.state.redirect) {
       return <Redirect push to={this.props.link} />;
     }
 
     return (
-      <div  style={boxContainer}
-            onMouseEnter={this.onMouseover.bind(this)}
-            onMouseLeave={this.onMouseout.bind(this)}
-            onClick={this.onClick.bind(this)}>
-        <div style={textDiv}>
-          <div style={boxText}>{this.props.text}</div>
-          <i class="fas fa-chevron-right" style={boxIcon}></i>
+      <div
+        className='inactive-button'
+        style={boxContainer}
+        onMouseEnter={this.onMouseover.bind(this)}
+        onMouseLeave={this.onMouseout.bind(this)}
+        onClick={this.onClick.bind(this)}>
+        <div className='button-content' style={textDiv}>
+          <div className='button-text' style={boxText}>{this.props.text}</div>
+          <i className="fas fa-chevron-right" style={boxIcon}></i>
         </div>
-        <div style={hatchedShadow}>
+        <div className='button-shadow' style={hatchedShadow}>
         </div>
       </div>
     );

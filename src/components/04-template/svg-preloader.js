@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../00-style/preloader.css';
+import '../00-style/animation/preloader.css';
 
 class SVGLoader extends Component {
   render() {

@@ -4,11 +4,12 @@ import MediaQuery from 'react-responsive';
 
 import './style/style.css';
 
+import BackgroundAnimation from './components/01-atom/backgrounds/bg-animation';
+
 import MobileNavBar from './components/02-molecule/navigation/mobile-navbar';
 import DesktopNavBar from './components/02-molecule/navigation/desktop-navbar';
 import MenuPush from './components/02-molecule/navigation/menu-push';
 
-import BackgroundAnimation from './components/01-atom/backgrounds/bg-animation';
 import SVGLoader from './components/04-template/svg-preloader.js';
 
 import HomePage from './components/05-page/homepage';

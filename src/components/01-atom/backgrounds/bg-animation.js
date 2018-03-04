@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Colours from '../../00-style/colours.js';
-import '../../00-style/animation.css';
+import '../../00-style/animation/animation.css';
 
 class BackgroundAnimation extends Component {
 

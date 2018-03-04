@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactHtmlParser from 'react-html-parser';
+import MediaQuery from 'react-responsive';
 
 import SimpleTextPage from '../04-template/simple-text-page';
-import PlaceholderText from '../03-organism/content/placeholder-text';
+import PlaceholderText from '../01-atom/placeholder/text';
+import Breakpoints from "../00-style/breakpoints";
+
 import { fetchPage } from '../../actions';
 
 class AboutUs extends Component {
@@ -32,7 +35,12 @@ class AboutUs extends Component {
 
     const content =   <div>
                         <div className={page.subheader_text_colour}>
-                          <h3> {page.subheader_text} </h3>
+                          <MediaQuery minWidth={Breakpoints.mobile}>
+                            <h3> {page.subheader_text} </h3>
+                          </MediaQuery>
+                          <MediaQuery maxWidth={Breakpoints.mobile - 1}>
+                            <h4> {page.subheader_text} </h4>
+                          </MediaQuery>
                         </div>
                         <div className={page.body_text_colour}>
                           {ReactHtmlParser(page.body_text)}

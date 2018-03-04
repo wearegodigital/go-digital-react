@@ -5,24 +5,65 @@ class ClientCard extends Component {
 
   constructor() {
      super();
+     this.setWrapperRef = this.setWrapperRef.bind(this);
+     this.handleClickOutside = this.handleClickOutside.bind(this);
      this.state = { hoverStyle: {display: 'none'},
-                    textStyle: {display: 'block'}
+                    titleStyle: {display: 'block'},
+                    descriptionStyle: {display: 'none'},
+                    active: false,
+                    clicked: false
                     }
    }
 
    onMouseover (e) {
-     this.setState({hoverStyle: {display: 'table'},
-                    textStyle: {display: 'none'}})
+     if(!this.state.active && !this.state.clicked){
+       this.setState({hoverStyle: {display: 'table'},
+                    titleStyle: {display: 'none'},
+                    descriptionStyle: {display: 'none'},
+                    active: true })
+      }
    }
 
    onMouseout (e) {
      this.setState({hoverStyle: {display: 'none'},
-                    textStyle: {display: 'block'}})
+                    titleStyle: {display: 'block'},
+                    active: false})
    }
 
    onClick (e) {
      this.setState({hoverStyle: {display: 'none'},
-                    textStyle: {display: 'block'}})
+                    titleStyle: {display: 'block'},
+                    descriptionStyle: {display: 'block'},
+                    clicked: true})
+   }
+
+   componentDidMount() {
+       document.addEventListener('mousedown', this.handleClickOutside);
+   }
+
+   componentWillUnmount() {
+       document.removeEventListener('mousedown', this.handleClickOutside);
+   }
+
+   /**
+    * Set the wrapper ref
+    */
+   setWrapperRef(node) {
+       this.wrapperRef = node;
+   }
+
+   /**
+    * Alert if clicked on outside of element
+    */
+   handleClickOutside(event) {
+       if (this.wrapperRef && !this.wrapperRef.contains(event.target) && this.state.clicked) {
+         this.setState({  hoverStyle: {display: 'none'},
+                          titleStyle: {display: 'block'},
+                          descriptionStyle: {display: 'none'},
+                          active: false,
+                          clicked: false
+                          })
+       }
    }
 
   render() {
@@ -33,14 +74,15 @@ class ClientCard extends Component {
       margin: this.props.margin,
       height: this.props.height,
       width: this.props.width,
-      maxWidth: this.props.maxWidth
+      maxWidth: this.props.maxWidth,
+      flex: '0 0 auto'
     }
 
     const hoverDiv = {
       position: 'absolute',
       top: '-4px',
       left: '-4px',
-      zIndex: '3',
+      zIndex: '4',
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.primary,
@@ -71,7 +113,7 @@ class ClientCard extends Component {
 
     }
 
-    const textDiv = {
+    const titleDiv = {
       position: 'absolute',
       bottom: '-4px',
       left: '-4px',
@@ -84,6 +126,22 @@ class ClientCard extends Component {
       color: Colours.secondary,
       height: 'auto',
       width: '100%'
+    }
+
+    const descriptionDiv = {
+      position: 'absolute',
+      top: '-4px',
+      left: '-4px',
+      zIndex: '5',
+      borderStyle: 'solid',
+      borderWidth: '4px',
+      borderColor: Colours.primary,
+      borderRadius: '4px',
+      backgroundColor: Colours.white,
+      height: '100%',
+      width: '100%',
+      display: 'block',
+      overflow: 'scroll'
     }
 
     const hoverText = {
@@ -116,18 +174,24 @@ class ClientCard extends Component {
       <div  style={boxContainer}
             onMouseEnter={this.onMouseover.bind(this)}
             onMouseLeave={this.onMouseout.bind(this)}
-            onClick={this.onClick.bind(this)}>
+            onClick={this.onClick.bind(this)}
+            ref={this.setWrapperRef}>
         <div style={imageDiv}>
+          <div style={{...descriptionDiv,...this.state.descriptionStyle}}>
+            <div style={boxText} className='whiteColour'>
+              {this.props.clientDescription}
+            </div>
+          </div>
           <div style={{...hoverDiv,...this.state.hoverStyle}}>
             <div style={hoverText}>
               <h3 className='whiteColour'>
-                Find Out More
+                {this.props.hoverHeader}
               </h3>
             </div>
           </div>
-          <div style={{...textDiv,...this.state.textStyle}}>
+          <div style={{...titleDiv,...this.state.titleStyle}}>
             <div style={boxText}>
-              <h3>{this.props.text}</h3>
+              <h3>{this.props.title}</h3>
             </div>
           </div>
         </div>

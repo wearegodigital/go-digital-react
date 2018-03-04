@@ -4,10 +4,6 @@ import MediaQuery from 'react-responsive';
 import Colours from "../00-style/colours";
 import Breakpoints from "../00-style/breakpoints";
 
-import HeaderBox from '../01-atom/boxes/header-box';
-import AccentButton from '../01-atom/buttons/accent-button';
-import InactiveButton from '../01-atom/buttons/inactive-button';
-
 import ClientCard from '../02-molecule/cards/client-card';
 
 import c4c from '../../assets/img/clients/c4c.png';
