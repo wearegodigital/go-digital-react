@@ -1,27 +1,77 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
+
+import Breakpoints from "../00-style/breakpoints";
+import Margins from "../00-style/margins";
+import HeroBox from '../01-atom/boxes/hero-box';
+import ButtonGroup from '../03-organism/group/buttons'
 
 class HomePage extends Component {
   render() {
     return(
       <div>
-        <div>
-          <h1> Homepage H1 </h1>
-        </div>
-        <div>
-          <h2> Homepage H2 </h2>
-          <h3> Homepage H3 </h3>
-          <h4> Homepage H4 </h4>
-          <p> Lorem ipsum dolor sit amet, no iudico abhorreant delicatissimi vel, et eirmod detraxit vel, detracto posidonium id eos. Ex nec minimum copiosae, mel id elit illum. Cum blandit adversarium ei. Quidam regione eam id.
+        <div className="container">
+          <MediaQuery minWidth={Breakpoints.desktop}>
+            <HeroBox
+              height='32vh' width='80vw' maxWidth='800px'
+              horizontalMargin={Margins.desktop.horizontal}
+              verticalMargin={16}
+              borderWidth={16}
+              text="A Bespoke Digital Agency"/>
 
-  Nam corrumpit efficiendi mediocritatem te. An pro esse mnesarchum, inermis apeirian persecuti pro an, est ei prima dictas tibique. Ludus dicant audire ei eam, homero possim quaeque pro ea. Mel congue detraxit te.
+            <ButtonGroup
+              horizontalMargin={Margins.desktop.horizontal}
+              verticalMargin={Margins.desktop.vertical}
+              direction='row'
+              buttonHeight='64px'
+              inactiveButtonWidth='240px'
+              inactiveButtonText='Who We Are'
+              inactiveButtonLink='/about-us'
+              accentButtonWidth='272px'
+              accentButtonText='Lets Work Together'
+              accentButtonLink='/contact-us'/>
+          </MediaQuery>
 
-  Ut aeterno apeirian ullamcorper per, ne qui dolore omnesque euripidis. Cum ei delectus suavitate. Enim molestiae his at, iusto perpetua postulant qui ut. Iudico corpora partiendo per et, vis omnis mutat ne. Etiam fuisset ut eos, mea at agam aliquip disputationi, sea ne ludus vitae mediocritatem.
 
-  Eum an aeque tollit semper, te mel sapientem conceptam. Ne lorem ludus intellegat nam, et has singulis convenire. Eum mundi vivendo ne, mei ne munere percipit. Iisque nominati consequuntur ne mei. Ea aperiri delectus vis, aperiri malorum id sit.
+          <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
+            <HeroBox
+              height='32vh' width='80vw' maxWidth='600px'
+              horizontalMargin={Margins.tablet.horizontal}
+              verticalMargin={16}
+              borderWidth={16}
+              text="A Bespoke Digital Agency"/>
 
-  Has in rebum sonet, quem saepe nusquam ad sed, pro an agam malorum similique. Feugait nominati ne eam, illum summo repudiandae ut est. Ea nec alterum alienum interpretaris, eu cum aeterno sapientem, no mea discere eripuit. Id eam velit sadipscing, nam eu semper appetere. Quodsi deserunt ocurreret usu ad. An graecis delectus partiendo vis, facete nostrud prodesset eu sea. Sea dicam tincidunt ullamcorper at. </p>
-          <div> Test Test Test</div>
-          <small> Caption </small>
+            <ButtonGroup
+              horizontalMargin={Margins.tablet.horizontal}
+              verticalMargin={Margins.tablet.vertical}
+              buttonHeight='48px'
+              inactiveButtonWidth='240px'
+              inactiveButtonText='Who We Are'
+              inactiveButtonLink='/about-us'
+              accentButtonWidth='272px'
+              accentButtonText='Lets Work Together'
+              accentButtonLink='/contact-us'/>
+          </MediaQuery>
+
+          <MediaQuery maxWidth={Breakpoints.mobile}>
+            <HeroBox
+              height='36vh' width='90vw'
+              horizontalMargin={Margins.mobile.horizontal}
+              verticalMargin={10}
+              borderWidth={8}
+              text="A Bespoke Digital Agency"/>
+
+            <ButtonGroup
+              horizontalMargin={Margins.mobile.horizontal}
+              verticalMargin={Margins.mobile.vertical}
+              buttonHeight='48px'
+              inactiveButtonWidth='192px'
+              inactiveButtonText='Who We Are'
+              inactiveButtonLink='/about-us'
+              accentButtonWidth='240px'
+              accentButtonText='Lets Work Together'
+              accentButtonLink='/contact-us'/>
+          </MediaQuery>
         </div>
       </div>
     );
