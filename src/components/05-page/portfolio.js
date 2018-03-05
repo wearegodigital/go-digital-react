@@ -14,11 +14,11 @@ class Portfolio extends Component {
       <div className="container">
         <MediaQuery minWidth={Breakpoints.desktop}>
             <HeaderBox
-              height='6em' width='60%' maxWidth='300px'
+              height='6em' width='60%' maxWidth='360px'
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}
-              text='Portfolio'/>
+              text='Our Clients...'/>
 
             <ClientCards
               height='40vh'
@@ -47,7 +47,7 @@ class Portfolio extends Component {
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}
-              text='Portfolio'/>
+              text='Our Clients...'/>
 
             <ClientCards
               height='40vh'
@@ -75,7 +75,7 @@ class Portfolio extends Component {
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}
-              text='Portfolio'/>
+              text='Our Clients...'/>
 
             <ClientCards
               height='36vh'
