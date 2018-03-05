@@ -260,5 +260,18 @@ small, .font_small {font-size: 0.618em;}
 /* Hide Scrollbar On Slider */
 
 .hero-slider, .hero-container {
-    pointer-events: none;
+  pointer-events: none;
+}
+
+/* Centre Text in Slider */
+
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: row;
+  place-content: center space-around;
+  align-items: center;
+}
+
+.slick-slider, .slick-slider div, .slick-slider div div {
+  height: 100%;
 }
