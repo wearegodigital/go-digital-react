@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'background icons';
-  src: url("../01-atom/backgrounds/fonts/background-icons.eot");
-  src: url("../01-atom/backgrounds/fonts/background-icons.eot?#iefix") format("embedded-opentype"), url("../01-atom/backgrounds/fonts/background-icons.woff") format("woff"), url("../01-atom/backgrounds/fonts/background-icons.ttf") format("truetype"), url("../01-atom/backgrounds/fonts/background-icons.svg#background-icons") format("svg");
+  src: url("../../01-atom/backgrounds/fonts/background-icons.eot");
+  src: url("../../01-atom/backgrounds/fonts/background-icons.eot?#iefix") format("embedded-opentype"), url("../../01-atom/backgrounds/fonts/background-icons.woff") format("woff"), url("../../01-atom/backgrounds/fonts/background-icons.ttf") format("truetype"), url("../../01-atom/backgrounds/fonts/background-icons.svg#background-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
