@@ -33,9 +33,16 @@ class InactiveButton extends Component {
    }
 
   render() {
+    var displayProperty = '';
+
+    if(this.props.display){
+      displayProperty = 'block';
+    } else {
+      displayProperty = 'none';
+    }
 
     const boxContainer = {
-      display: 'block',
+      display: displayProperty,
       position: 'relative',
       cursor: 'pointer',
       margin: this.props.margin,
@@ -113,5 +120,9 @@ class InactiveButton extends Component {
     );
   }
 }
+
+InactiveButton.defaultProps = {
+  display: true
+};
 
 export default InactiveButton;

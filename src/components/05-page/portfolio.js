@@ -1,37 +1,14 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 
-import Colours from "../00-style/colours";
 import Breakpoints from "../00-style/breakpoints";
 import Margins from "../00-style/margins";
 import HeaderBox from '../01-atom/boxes/header-box';
-import TextBox from '../01-atom/boxes/text-box';
 import ClientCards from '../03-organism/group/client-cards';
 import ButtonGroup from '../03-organism/group/buttons';
 
-import c4c from '../../assets/img/clients/c4c.png';
-
 class Portfolio extends Component {
   render() {
-
-    const buttonGroup = {
-      display: 'flex',
-      flexFlow: 'row wrap',
-      alignItems: 'flex-start',
-      justifyContent: 'flex-start'
-    }
-
-    const cardContainer = {
-      display: 'flex',
-      flexWrap: 'nowrap',
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-
-      width:'100%',
-      overflowX: 'auto',
-      WebkitOverflowScrolling: 'touch',
-      msOverflowStyle: '-ms-autohiding-scrollbar'
-    }
 
     return(
       <div className="container">
@@ -41,13 +18,12 @@ class Portfolio extends Component {
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}
-              headerDOM='h2'
               text='Portfolio'/>
 
             <ClientCards
               height='40vh'
               maxWidth='600px'
-              width={`calc(100% - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
+              width={`calc(100vw - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}/>
@@ -55,29 +31,28 @@ class Portfolio extends Component {
             <ButtonGroup
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
-              buttonHeight='64px'
-              buttonMaxWidth='240px'
-              buttonWidth='240px'
               direction='row'
+              buttonHeight='64px'
+              inactiveButtonWidth=''
               inactiveButtonText={this.props.nextButtonText}
               inactiveButtonLink={this.props.nextButtonLink}
+              accentButtonWidth='240px'
               accentButtonText="Let's Do This!"
               accentButtonLink='/contact-us'/>
         </MediaQuery>
 
-        <MediaQuery minWidth={Breakpoints.mobile} maxWidth={Breakpoints.desktop - 1}>
+        <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
             <HeaderBox
-              height='6em' width='60%' maxWidth='300px'
+              height='6em' width='65%' maxWidth='360px'
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}
-              headerDOM='h2'
               text='Portfolio'/>
 
             <ClientCards
               height='40vh'
               maxWidth='600px'
-              width={`calc(100% - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
+              width={`calc(100vw - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}/>
@@ -85,28 +60,27 @@ class Portfolio extends Component {
             <ButtonGroup
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
-              buttonHeight='64px'
-              buttonMaxWidth='240px'
-              buttonWidth='240px'
+              buttonHeight='48px'
+              inactiveButtonWidth=''
               inactiveButtonText={this.props.nextButtonText}
               inactiveButtonLink={this.props.nextButtonLink}
+              accentButtonWidth='240px'
               accentButtonText="Let's Do This!"
               accentButtonLink='/contact-us'/>
         </MediaQuery>
 
-        <MediaQuery maxWidth={Breakpoints.mobile - 1}>
+        <MediaQuery maxWidth={Breakpoints.mobile}>
             <HeaderBox
               height='4em' width='50%' maxWidth='240px'
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}
-              headerDOM='h3'
               text='Portfolio'/>
 
             <ClientCards
-              height='40vh'
+              height='36vh'
               maxWidth='600px'
-              width={`calc(100% - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
+              width={`calc(100vw - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}/>
@@ -115,10 +89,10 @@ class Portfolio extends Component {
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               buttonHeight='48px'
-              buttonMaxWidth='240px'
-              buttonWidth='240px'
+              inactiveButtonWidth=''
               inactiveButtonText={this.props.nextButtonText}
               inactiveButtonLink={this.props.nextButtonLink}
+              accentButtonWidth='192px'
               accentButtonText="Let's Do This!"
               accentButtonLink='/contact-us'/>
         </MediaQuery>

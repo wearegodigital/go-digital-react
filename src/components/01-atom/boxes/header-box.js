@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import ReactHtmlParser from 'react-html-parser';
+import MediaQuery from 'react-responsive';
 
 import Colours from "../../00-style/colours";
+import Breakpoints from "../../00-style/breakpoints";
 
 class HeaderBox extends Component {
 
@@ -31,13 +32,13 @@ render() {
     display: 'table'
   }
 
-  /*const headerText = {
+  const headerText = {
     display: 'table-cell',
     verticalAlign: 'middle',
     padding: '0 16px'
-  }*/
+  }
 
-  const headerText = 'display: table-cell; vertical-align: middle; padding: 0 16px;'
+  /*const headerText = 'display: table-cell; vertical-align: middle; padding: 0 16px;'*/
 
   const hatchedShadow = {
     position: 'absolute',
@@ -57,7 +58,12 @@ render() {
   return (
     <div className='header-container' style={boxContainer}>
       <div className='header-text' style={textDiv}>
-        {ReactHtmlParser(`<${this.props.headerDOM} style="${headerText}"> ${this.props.text} </${this.props.headerDOM}>`)}
+        <MediaQuery minWidth={Breakpoints.mobile + 1}>
+          <h2 style={headerText}> {this.props.text} </h2>
+        </MediaQuery>
+        <MediaQuery maxWidth={Breakpoints.mobile}>
+          <h3 style={headerText}> {this.props.text} </h3>
+        </MediaQuery>
       </div>
       <div className='header-shadow' style={hatchedShadow}>
       </div>

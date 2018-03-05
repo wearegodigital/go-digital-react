@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import _ from 'lodash';
 import ReactHtmlParser from 'react-html-parser';
 import MediaQuery from 'react-responsive';
+import _ from 'lodash';
 
 import { fetchPages } from '../../../actions';
 
-import Colours from "../../00-style/colours";
 import Breakpoints from "../../00-style/breakpoints";
 import PlaceholderText from '../../01-atom/placeholder/text';
 import ClientCard from '../../02-molecule/cards/client-card';
@@ -26,12 +25,14 @@ class ClientCards extends Component {
           height={this.props.height}
           width={this.props.width}
           maxWidth={this.props.maxWidth}
-          margin={`0 ${this.props.horizontalMargin}px ${this.props.shadowMargin}px 0`}
+          margin={`0 ${this.props.horizontalMargin}px 0 0`}
           shadowMargin={this.props.shadowMargin}
           title=''
+          id="placeholder-client-card"
           clientDescription={<PlaceholderText />}
           hoverHeader=''
-          backgroundImage='' />
+          backgroundImage=''
+          displayPlaceholder={true} />
       );
     }
 
@@ -42,7 +43,7 @@ class ClientCards extends Component {
           height={this.props.height}
           width={this.props.width}
           maxWidth={this.props.maxWidth}
-          margin={`0 ${this.props.horizontalMargin}px ${this.props.shadowMargin}px 0`}
+          margin={`0 ${this.props.horizontalMargin}px 0 0`}
           shadowMargin={this.props.shadowMargin}
           title={page.client_name}
           hoverHeader={page.hover_text}
@@ -77,12 +78,11 @@ class ClientCards extends Component {
       overflowX: 'auto',
       WebkitOverflowScrolling: 'touch',
       msOverflowStyle: '-ms-autohiding-scrollbar',
-      padding: `0px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.shadowMargin}px ${this.props.horizontalMargin}px`
+      padding: `0px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.shadowMargin+8}px ${this.props.horizontalMargin}px`
     }
 
     return(
         <div className="card-container" style={cardContainer}>
-          {console.log(this.props.shadowMargin)}
             {this.renderPages()}
         </div>
     );

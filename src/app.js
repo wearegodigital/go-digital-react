@@ -41,19 +41,21 @@ class App extends React.Component {
           <MenuPush/>
           <main id="page-wrap">
             <BackgroundAnimation/>
-            <MediaQuery query="(max-width: 959px)">
-              <MobileNavBar/>
-            </MediaQuery>
-            <MediaQuery query="(min-width: 960px)">
-              <DesktopNavBar/>
-            </MediaQuery>
-            <Switch>
-              <Route path="/contact-us" component={ContactUs} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/services" component={Services} />
-              <Route path="/about-us" component={AboutUs} />
-              <Route path="/" component={HomePage} />
-            </Switch>
+            <div id="content">
+              <MediaQuery query="(max-width: 959px)">
+                <MobileNavBar/>
+              </MediaQuery>
+              <MediaQuery query="(min-width: 960px)">
+                <DesktopNavBar/>
+              </MediaQuery>
+              <Switch>
+                <Route path="/contact-us" component={ContactUs} />
+                <Route path="/portfolio" component={Portfolio} />
+                <Route path="/services" component={Services} />
+                <Route path="/about-us" component={AboutUs} />
+                <Route path="/" component={HomePage} />
+              </Switch>
+            </div>
           </main>
         </div>
       </HashRouter>

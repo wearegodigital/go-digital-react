@@ -23,9 +23,9 @@ class BackgroundAnimation extends Component {
     }
 
     return (
-      <div class='background'>
-          <div class='inner-background'>
-              <div class='shape'>
+      <div className='background'>
+          <div className='inner-background'>
+              <div className='shape'>
                   {shapes}
               </div>
           </div>

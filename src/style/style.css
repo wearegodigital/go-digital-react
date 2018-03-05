@@ -114,6 +114,10 @@ h1, h2 {
       right: 16px;
       top: 39px;
   }
+
+  #content {
+    margin-top: 112px;
+  }
 }
 
 @media screen and (min-width:960px){
@@ -123,6 +127,10 @@ h1, h2 {
       height: 24px;
       right: 32px;
       top: 52px;
+  }
+
+  #content {
+    margin-top: 160px;
   }
 }
 
@@ -188,7 +196,8 @@ h1, h2 {
     display: block;
     overflow: hidden;
     z-index: -1;
-    position: absolute;
+    position: fixed;
+    top: 0;
 }
 
 /* Text Colours */

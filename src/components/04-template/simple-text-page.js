@@ -18,7 +18,6 @@ class SimpleTextPage extends Component {
             horizontalMargin={Margins.desktop.horizontal}
             verticalMargin={Margins.desktop.vertical}
             shadowMargin={Margins.desktop.shadow}
-            headerDOM='h2'
             text={this.props.header}/>
 
           <TextBox
@@ -33,12 +32,12 @@ class SimpleTextPage extends Component {
           <ButtonGroup
             horizontalMargin={Margins.desktop.horizontal}
             verticalMargin={Margins.desktop.vertical}
-            buttonHeight='64px'
-            buttonMaxWidth='240px'
-            buttonWidth='240px'
             direction='row'
+            buttonHeight='64px'
+            inactiveButtonWidth='240px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
+            accentButtonWidth='240px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>
@@ -50,7 +49,6 @@ class SimpleTextPage extends Component {
             horizontalMargin={Margins.tablet.horizontal}
             verticalMargin={Margins.tablet.vertical}
             shadowMargin={Margins.tablet.shadow}
-            headerDOM='h2'
             text={this.props.header}/>
 
           <TextBox
@@ -65,11 +63,11 @@ class SimpleTextPage extends Component {
           <ButtonGroup
             horizontalMargin={Margins.tablet.horizontal}
             verticalMargin={Margins.tablet.vertical}
-            buttonHeight='64px'
-            buttonMaxWidth='240px'
-            buttonWidth='240px'
+            buttonHeight='48px'
+            inactiveButtonWidth='240px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
+            accentButtonWidth='240px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>
@@ -80,12 +78,11 @@ class SimpleTextPage extends Component {
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
             shadowMargin={Margins.mobile.shadow}
-            headerDOM='h3'
             text={this.props.header}/>
 
           <TextBox
             maxWidth='900px'
-            height='40vh'
+            height='36vh'
             width={`calc(100% - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
@@ -96,10 +93,10 @@ class SimpleTextPage extends Component {
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
             buttonHeight='48px'
-            buttonMaxWidth='240px'
-            buttonWidth='240px'
+            inactiveButtonWidth='192px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
+            accentButtonWidth='160px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>

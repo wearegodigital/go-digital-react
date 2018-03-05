@@ -33,9 +33,16 @@ class AccentButton extends Component {
    }
 
   render() {
+    var displayProperty = '';
+
+    if(this.props.display){
+      displayProperty = 'block';
+    } else {
+      displayProperty = 'none';
+    }
 
     const boxContainer = {
-      display: 'block',
+      display: displayProperty,
       position: 'relative',
       cursor: 'pointer',
       margin: this.props.margin,
@@ -114,5 +121,9 @@ class AccentButton extends Component {
     );
   }
 }
+
+AccentButton.defaultProps = {
+  display: true
+};
 
 export default AccentButton;

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
+
 import Colours from "../../00-style/colours";
+import Breakpoints from "../../00-style/breakpoints";
 
 class ClientCard extends Component {
 
@@ -82,7 +85,7 @@ class ClientCard extends Component {
       position: 'absolute',
       top: '-4px',
       left: '-4px',
-      zIndex: '4',
+      zIndex: '5',
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.primary,
@@ -105,7 +108,7 @@ class ClientCard extends Component {
       height: '100%',
       width: '100%',
       display: 'block',
-
+      backgroundColor: Colours.white,
       backgroundImage: `url(${this.props.backgroundImage}`,
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
@@ -113,11 +116,34 @@ class ClientCard extends Component {
 
     }
 
+    var displayProperty = '';
+
+    if(this.props.displayPlaceholder){
+      displayProperty = 'block';
+    } else {
+      displayProperty = 'none';
+    }
+
+    const placeholderDiv = {
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      zIndex: '3',
+      borderStyle: 'solid',
+      borderWidth: '4px',
+      borderColor: Colours.secondary,
+      borderRadius: '4px',
+      height: '100%',
+      width: '100%',
+      display: displayProperty,
+      backgroundColor: Colours.white,
+    }
+
     const titleDiv = {
       position: 'absolute',
       bottom: '-4px',
       left: '-4px',
-      zIndex: '3',
+      zIndex: '4',
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.secondary,
@@ -132,7 +158,7 @@ class ClientCard extends Component {
       position: 'absolute',
       top: '-4px',
       left: '-4px',
-      zIndex: '5',
+      zIndex: '6',
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.primary,
@@ -151,7 +177,7 @@ class ClientCard extends Component {
     }
 
     const boxText = {
-      padding: '16px',
+      padding: '8px 16px',
       overflow: 'auto'
     }
 
@@ -164,7 +190,7 @@ class ClientCard extends Component {
       borderWidth: '4px',
       borderColor: Colours.secondary,
       borderRadius: '4px',
-      background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0) 8px)`,
+      background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
       margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
       height: '100%',
       width: '100%'
@@ -176,8 +202,9 @@ class ClientCard extends Component {
             onMouseLeave={this.onMouseout.bind(this)}
             onClick={this.onClick.bind(this)}
             ref={this.setWrapperRef}
-            id={this.props.id}
+            id={`portfolio-item-${this.props.id}`}
             className='card'>
+        <div style={placeholderDiv} className='loading-image phHeader'></div>
         <div style={imageDiv} className='card-image'>
           <div style={{...descriptionDiv,...this.state.descriptionStyle}}>
             <div style={boxText} className='whiteColour card-description'>
@@ -186,14 +213,22 @@ class ClientCard extends Component {
           </div>
           <div style={{...hoverDiv,...this.state.hoverStyle}} className='card-hover'>
             <div style={hoverText} className='hover-text'>
-              <h3 className='whiteColour hover-header'>
-                {this.props.hoverHeader}
-              </h3>
+              <MediaQuery minWidth={Breakpoints.mobile + 1}>
+                <h3 className='whiteColour hover-header'> {this.props.hoverHeader} </h3>
+              </MediaQuery>
+              <MediaQuery maxWidth={Breakpoints.mobile}>
+                <h4 className='whiteColour hover-header'> {this.props.hoverHeader} </h4>
+              </MediaQuery>
             </div>
           </div>
           <div style={{...titleDiv,...this.state.titleStyle}} className='card-title'>
             <div style={boxText}>
-              <h3>{this.props.title}</h3>
+              <MediaQuery minWidth={Breakpoints.mobile + 1}>
+                <h3>{this.props.title}</h3>
+              </MediaQuery>
+              <MediaQuery maxWidth={Breakpoints.mobile}>
+                <h4>{this.props.title}</h4>
+              </MediaQuery>
             </div>
           </div>
         </div>
@@ -203,5 +238,9 @@ class ClientCard extends Component {
     );
   }
 }
+
+ClientCard.defaultProps = {
+  displayPlaceholder: false
+};
 
 export default ClientCard;

@@ -14,7 +14,11 @@ var navStyle = {
   height: '128px',
   width: '100%',
   border: 'solid ' + Colours.primary,
-  borderWidth: Borders.thinLeft
+  borderWidth: Borders.thinLeft,
+  position: 'fixed',
+  top: '0',
+  overflow: 'hidden',
+  zIndex: '20'
 };
 
 var navLogoStyle = {
