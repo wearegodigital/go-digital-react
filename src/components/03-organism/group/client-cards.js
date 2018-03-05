@@ -51,11 +51,14 @@ class ClientCards extends Component {
           backgroundImage={`http://directus.wearegodigital.com${page.cover_photo.data.url}`}
           clientDescription={<div>
                               <div className='secondaryColour'>
+                                <h4> {page.client_name} </h4>
+                              </div>
+                              <div className='primaryColour'>
                                 <MediaQuery minWidth={Breakpoints.mobile}>
-                                  <h3> {page.client_name} </h3>
+                                  <h3 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.client_summary} </h3>
                                 </MediaQuery>
                                 <MediaQuery maxWidth={Breakpoints.mobile - 1}>
-                                  <h4> {page.client_name} </h4>
+                                  <h4 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.client_summary} </h4>
                                 </MediaQuery>
                               </div>
                               <div className='blackColour'>
