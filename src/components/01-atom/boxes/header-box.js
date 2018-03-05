@@ -13,8 +13,7 @@ render() {
     position: 'relative',
     margin: `${this.props.verticalMargin}px ${this.props.horizontalMargin + this.props.shadowMargin}px ${this.props.verticalMargin + this.props.shadowMargin}px ${this.props.horizontalMargin}px`,
     height: this.props.height,
-    width: this.props.width,
-    maxWidth: this.props.maxWidth
+    width: `${this.props.width}px`,
   }
 
   const textDiv = {
@@ -27,8 +26,8 @@ render() {
     borderColor: Colours.primary,
     borderRadius: '4px',
     backgroundColor: Colours.white,
-    height: '100%',
-    width: '100%',
+    height: this.props.height,
+    width: `${this.props.width}px`,
     display: 'table'
   }
 
@@ -51,8 +50,8 @@ render() {
     borderRadius: '4px',
     background:  `repeating-linear-gradient(45deg, ${Colours.primary}, ${Colours.primary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
     margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
-    height: '100%',
-    width: '100%'
+    height: this.props.height,
+    width: `${this.props.width}px`,
   }
 
   return (

@@ -90,8 +90,9 @@ class ClientCard extends Component {
       borderWidth: '4px',
       borderColor: Colours.primary,
       borderRadius: '4px',
-      height: '100%',
-      width: '100%',
+      height: this.props.height,
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
       color: Colours.white,
       backgroundColor: 'rgba(182, 79, 89,0.8)'
     }
@@ -105,8 +106,9 @@ class ClientCard extends Component {
       borderWidth: '4px',
       borderColor: Colours.secondary,
       borderRadius: '4px',
-      height: '100%',
-      width: '100%',
+      height: this.props.height,
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
       display: 'block',
       backgroundColor: Colours.white,
       backgroundImage: `url(${this.props.backgroundImage}`,
@@ -133,8 +135,9 @@ class ClientCard extends Component {
       borderWidth: '4px',
       borderColor: Colours.secondary,
       borderRadius: '4px',
-      height: '100%',
-      width: '100%',
+      height: this.props.height,
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
       display: displayProperty,
       backgroundColor: Colours.white,
     }
@@ -151,7 +154,8 @@ class ClientCard extends Component {
       backgroundColor: Colours.white,
       color: Colours.secondary,
       height: 'auto',
-      width: '100%'
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
     }
 
     const descriptionDiv = {
@@ -164,8 +168,9 @@ class ClientCard extends Component {
       borderColor: Colours.primary,
       borderRadius: '4px',
       backgroundColor: Colours.white,
-      height: '100%',
-      width: '100%',
+      height: this.props.height,
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
       display: 'block',
       overflow: 'scroll'
     }
@@ -192,8 +197,9 @@ class ClientCard extends Component {
       borderRadius: '4px',
       background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
       margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
-      height: '100%',
-      width: '100%'
+      height: this.props.height,
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
     }
 
     return (

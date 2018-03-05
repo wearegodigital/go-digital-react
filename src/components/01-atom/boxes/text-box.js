@@ -12,7 +12,6 @@ render() {
     margin: `${this.props.verticalMargin}px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.verticalMargin + this.props.shadowMargin}px ${this.props.horizontalMargin}px`,
     height: this.props.height,
     width: this.props.width,
-    maxWidth: this.props.maxWidth
   }
 
   const textDiv = {
@@ -25,10 +24,10 @@ render() {
     borderColor: Colours.secondary,
     borderRadius: '4px',
     backgroundColor: Colours.white,
-    height: '100%',
-    width: '100%',
+    height: this.props.height,
+    width: this.props.width,
     display: 'block',
-    overflow: 'scroll'
+    overflow: 'scroll',
   }
 
   const boxText = {
@@ -47,8 +46,8 @@ render() {
     borderRadius: '4px',
     background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
     margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
-    height: '100%',
-    width: '100%'
+    height: this.props.height,
+    width: this.props.width,
   }
 
   return (
