@@ -7,7 +7,7 @@ class ButtonGroup extends Component {
   render() {
     const buttons = {
       display: 'flex',
-      flexFlow: 'row wrap',
+      flexFlow: `${this.props.direction} wrap`,
       alignItems: 'flex-start',
       justifyContent: 'flex-start',
       margin:`${this.props.verticalMargin}px ${this.props.horizontalMargin}px`
@@ -34,5 +34,9 @@ class ButtonGroup extends Component {
     );
   }
 }
+
+ButtonGroup.defaultProps = {
+  direction: 'column'
+};
 
 export default ButtonGroup;

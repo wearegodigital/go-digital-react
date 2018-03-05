@@ -36,6 +36,7 @@ class SimpleTextPage extends Component {
             buttonHeight='64px'
             buttonMaxWidth='240px'
             buttonWidth='240px'
+            direction='row'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
             accentButtonText={this.props.contactButtonText}

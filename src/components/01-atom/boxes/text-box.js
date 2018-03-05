@@ -6,11 +6,6 @@ class TextBox extends Component {
 
 render() {
 
-  console.log(this.props.horizontalMargin + this.props.shadowMargin)
-  console.log(this.props.horizontalMargin)
-  console.log(this.props.shadowMargin)
-
-
   const boxContainer = {
     display: 'block',
     position: 'relative',

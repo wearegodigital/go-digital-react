@@ -165,7 +165,7 @@ class ClientCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0) 8px)`,
-      margin: `${this.props.shadowMargin} 0 0 ${this.props.shadowMargin}`,
+      margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
       height: '100%',
       width: '100%'
     }
@@ -175,27 +175,29 @@ class ClientCard extends Component {
             onMouseEnter={this.onMouseover.bind(this)}
             onMouseLeave={this.onMouseout.bind(this)}
             onClick={this.onClick.bind(this)}
-            ref={this.setWrapperRef}>
-        <div style={imageDiv}>
+            ref={this.setWrapperRef}
+            id={this.props.id}
+            className='card'>
+        <div style={imageDiv} className='card-image'>
           <div style={{...descriptionDiv,...this.state.descriptionStyle}}>
-            <div style={boxText} className='whiteColour'>
+            <div style={boxText} className='whiteColour card-description'>
               {this.props.clientDescription}
             </div>
           </div>
-          <div style={{...hoverDiv,...this.state.hoverStyle}}>
-            <div style={hoverText}>
-              <h3 className='whiteColour'>
+          <div style={{...hoverDiv,...this.state.hoverStyle}} className='card-hover'>
+            <div style={hoverText} className='hover-text'>
+              <h3 className='whiteColour hover-header'>
                 {this.props.hoverHeader}
               </h3>
             </div>
           </div>
-          <div style={{...titleDiv,...this.state.titleStyle}}>
+          <div style={{...titleDiv,...this.state.titleStyle}} className='card-title'>
             <div style={boxText}>
               <h3>{this.props.title}</h3>
             </div>
           </div>
         </div>
-        <div style={hatchedShadow}>
+        <div style={hatchedShadow} className='card-shadow'>
         </div>
       </div>
     );
