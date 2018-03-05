@@ -14,7 +14,7 @@ class SimpleTextPage extends Component {
       <div className="container">
         <MediaQuery minWidth={Breakpoints.desktop}>
           <HeaderBox
-            height='6em' width='60%' maxWidth='300px'
+            height='6em' width='60vw' maxWidth='300px'
             horizontalMargin={Margins.desktop.horizontal}
             verticalMargin={Margins.desktop.vertical}
             shadowMargin={Margins.desktop.shadow}
@@ -23,7 +23,7 @@ class SimpleTextPage extends Component {
           <TextBox
             maxWidth='900px'
             height='40vh'
-            width={`calc(100% - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
+            width={`calc(100vw - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
             horizontalMargin={Margins.desktop.horizontal}
             verticalMargin={Margins.desktop.vertical}
             shadowMargin={Margins.desktop.shadow}
@@ -45,7 +45,7 @@ class SimpleTextPage extends Component {
 
         <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
           <HeaderBox
-            height='6em' width='60%' maxWidth='300px'
+            height='6em' width='60vw' maxWidth='300px'
             horizontalMargin={Margins.tablet.horizontal}
             verticalMargin={Margins.tablet.vertical}
             shadowMargin={Margins.tablet.shadow}
@@ -54,7 +54,7 @@ class SimpleTextPage extends Component {
           <TextBox
             maxWidth='900px'
             height='40vh'
-            width={`calc(100% - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
+            width={`calc(100vw - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
             horizontalMargin={Margins.tablet.horizontal}
             verticalMargin={Margins.tablet.vertical}
             shadowMargin={Margins.tablet.shadow}
@@ -74,7 +74,7 @@ class SimpleTextPage extends Component {
 
         <MediaQuery maxWidth={Breakpoints.mobile}>
           <HeaderBox
-            height='4em' width='50%' maxWidth='240px'
+            height='4em' width='50vw' maxWidth='240px'
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
             shadowMargin={Margins.mobile.shadow}
@@ -83,7 +83,7 @@ class SimpleTextPage extends Component {
           <TextBox
             maxWidth='900px'
             height='36vh'
-            width={`calc(100% - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
+            width={`calc(100vw - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
             shadowMargin={Margins.mobile.shadow}

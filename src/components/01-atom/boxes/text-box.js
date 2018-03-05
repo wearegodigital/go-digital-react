@@ -5,6 +5,12 @@ import Colours from "../../00-style/colours";
 class TextBox extends Component {
 
 render() {
+  var calculateMaxWidth = ''
+  if(this.props.maxWidth==='width'){
+    calculateMaxWidth = this.props.width
+  } else {
+    calculateMaxWidth = this.props.maxWidth
+  }
 
   const boxContainer = {
     display: 'block',
@@ -12,6 +18,7 @@ render() {
     margin: `${this.props.verticalMargin}px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.verticalMargin + this.props.shadowMargin}px ${this.props.horizontalMargin}px`,
     height: this.props.height,
     width: this.props.width,
+    maxWidth: calculateMaxWidth,
   }
 
   const textDiv = {
@@ -26,6 +33,7 @@ render() {
     backgroundColor: Colours.white,
     height: this.props.height,
     width: this.props.width,
+    maxWidth: calculateMaxWidth,
     display: 'block',
     overflow: 'scroll',
   }
@@ -48,6 +56,7 @@ render() {
     margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
     height: this.props.height,
     width: this.props.width,
+    maxWidth: calculateMaxWidth,
   }
 
   return (
@@ -61,5 +70,9 @@ render() {
   );
 }
 }
+
+TextBox.defaultProps = {
+  maxWidth: 'width'
+};
 
 export default TextBox;

@@ -14,7 +14,7 @@ class Portfolio extends Component {
       <div className="container">
         <MediaQuery minWidth={Breakpoints.desktop}>
             <HeaderBox
-              height='6em' width={360}
+              height='6em' width='360px'
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}
@@ -43,7 +43,7 @@ class Portfolio extends Component {
 
         <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
             <HeaderBox
-              height='6em' width={360}
+              height='6em' width='360px'
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}
@@ -71,7 +71,7 @@ class Portfolio extends Component {
 
         <MediaQuery maxWidth={Breakpoints.mobile}>
             <HeaderBox
-              height='4em' width={212}
+              height='4em'  width='212px'
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}
