@@ -7,12 +7,19 @@ class HeroBox extends Component {
 
   render() {
 
+    var calculateMaxWidth = ''
+    if(this.props.maxWidth==='width'){
+      calculateMaxWidth = this.props.width
+    } else {
+      calculateMaxWidth = this.props.maxWidth
+    }
+
     const boxContainer = {
       display: 'block',
       margin: `${this.props.verticalMargin}vh ${this.props.horizontalMargin}px ${this.props.verticalMargin}vh ${this.props.horizontalMargin}px`,
       height: this.props.height,
       width: this.props.width,
-      maxWidth: this.props.maxWidth,
+      maxWidth: calculateMaxWidth,
       overflowX: 'hidden',
     }
 
@@ -28,14 +35,14 @@ class HeroBox extends Component {
       borderColor: Colours.secondary,
       height: this.props.height,
       width: this.props.width,
-      maxWidth: this.props.maxWidth,
+      maxWidth: calculateMaxWidth,
       overflowX: 'hidden',
     }
 
     return (
       <div className='hero-container' style={boxContainer}>
         <div className='hero-slider' style={sliderDiv}>
-          <TaglineSlider/>
+          <TaglineSlider textWidth={this.props.textWidth} height= {this.props.height}/>
         </div>
       </div>
     );
@@ -43,7 +50,8 @@ class HeroBox extends Component {
   }
 
 HeroBox.defaultProps = {
-  maxWidth: 'width'
+  maxWidth: 'width',
+  textWidth: '100%'
 };
 
 export default HeroBox;

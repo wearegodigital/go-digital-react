@@ -13,11 +13,12 @@ class HomePage extends Component {
         <div className="container">
           <MediaQuery minWidth={Breakpoints.desktop}>
             <HeroBox
-              height='32vh' width='80vw' maxWidth='800px'
+              height='40vh'
+              width={`calc(100vw - ${Margins.desktop.horizontal}px)`}
+              textWidth='720px'
               horizontalMargin={Margins.desktop.horizontal}
-              verticalMargin={16}
-              borderWidth={16}
-              text="A Bespoke Digital Agency"/>
+              verticalMargin={12}
+              borderWidth={16}/>
 
             <ButtonGroup
               horizontalMargin={Margins.desktop.horizontal}
@@ -35,11 +36,12 @@ class HomePage extends Component {
 
           <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
             <HeroBox
-              height='32vh' width='80vw' maxWidth='600px'
+              height='24vh'
+              width={`calc(100vw - ${Margins.tablet.horizontal}px)`}
+              textWidth='480px'
               horizontalMargin={Margins.tablet.horizontal}
-              verticalMargin={16}
-              borderWidth={16}
-              text="A Bespoke Digital Agency"/>
+              verticalMargin={12}
+              borderWidth={8}/>
 
             <ButtonGroup
               horizontalMargin={Margins.tablet.horizontal}
@@ -55,11 +57,11 @@ class HomePage extends Component {
 
           <MediaQuery maxWidth={Breakpoints.mobile}>
             <HeroBox
-              height='36vh' width='90vw'
+              height='36vh'
+              width={`calc(100vw - ${Margins.tablet.horizontal}px)`}
               horizontalMargin={Margins.mobile.horizontal}
-              verticalMargin={10}
-              borderWidth={8}
-              text="A Bespoke Digital Agency"/>
+              verticalMargin={8}
+              borderWidth={8}/>
 
             <ButtonGroup
               horizontalMargin={Margins.mobile.horizontal}

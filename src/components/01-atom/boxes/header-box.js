@@ -42,7 +42,7 @@ render() {
   const headerText = {
     display: 'table-cell',
     verticalAlign: 'middle',
-    padding: '0 16px'
+    padding: '0 16px',
   }
 
   /*const headerText = 'display: table-cell; vertical-align: middle; padding: 0 16px;'*/

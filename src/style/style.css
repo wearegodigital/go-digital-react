@@ -268,10 +268,40 @@ small, .font_small {font-size: 0.618em;}
 .slick-initialized .slick-slide {
   display: flex;
   flex-direction: row;
-  place-content: center space-around;
+  place-content: flex-start flex-start;
   align-items: center;
 }
 
 .slick-slider, .slick-slider div, .slick-slider div div {
   height: 100%;
+}
+
+/* Alternating Background Patterns for Service Cards */
+
+.card-container .card:nth-child(1n) .service-card-image {
+  background-image: url('../assets/img/services/circles.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container .card:nth-child(2n) .service-card-image {
+  background-image: url('../assets/img/services/triangles.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container .card:nth-child(3n) .service-card-image {
+  background-image: url('../assets/img/services/squares.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container .card:nth-child(4n) .service-card-image {
+  background-image: url('../assets/img/services/half-circles.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

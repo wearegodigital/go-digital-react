@@ -6,7 +6,7 @@ import MenuItem from '../../01-atom/navigation/menu-item.js';
 
 var mobileStyles = {
    bmMenu: {
-     backgroundImage: "url('./assets/img/menu-reveal-shadow.png')",
+     backgroundImage: "url('./assets/img/menu/menu-reveal-shadow.png')",
      backgroundPosition: "left top",
      backgroundSize: 'cover',
      backgroundRepeat: 'no-repeat'

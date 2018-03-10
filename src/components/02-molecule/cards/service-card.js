@@ -4,7 +4,7 @@ import MediaQuery from 'react-responsive';
 import Colours from "../../00-style/colours";
 import Breakpoints from "../../00-style/breakpoints";
 
-class ClientCard extends Component {
+class ServiceCard extends Component {
 
   constructor() {
      super();
@@ -21,7 +21,7 @@ class ClientCard extends Component {
    onMouseover (e) {
      if(!this.state.active && !this.state.clicked){
        this.setState({hoverStyle: {display: 'table'},
-                    titleStyle: {display: 'none'},
+                    titleStyle: {display: 'block'},
                     descriptionStyle: {display: 'none'},
                     active: true })
       }
@@ -81,22 +81,6 @@ class ClientCard extends Component {
       flex: '0 0 auto'
     }
 
-    const hoverDiv = {
-      position: 'absolute',
-      top: '-4px',
-      left: '-4px',
-      zIndex: '5',
-      borderStyle: 'solid',
-      borderWidth: '4px',
-      borderColor: Colours.primary,
-      borderRadius: '4px',
-      height: this.props.height,
-      width: this.props.width,
-      maxWidth: this.props.maxWidth,
-      color: Colours.white,
-      backgroundColor: 'rgba(182, 79, 89,0.8)'
-    }
-
     const imageDiv = {
       position: 'absolute',
       top: '0',
@@ -111,10 +95,6 @@ class ClientCard extends Component {
       maxWidth: this.props.maxWidth,
       display: 'block',
       backgroundColor: Colours.white,
-      backgroundImage: `url(${this.props.backgroundImage}`,
-      backgroundPosition: 'center center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover'
 
     }
 
@@ -142,11 +122,36 @@ class ClientCard extends Component {
       backgroundColor: Colours.white,
     }
 
-    const titleDiv = {
+    const iframe = {
+      position: 'absolute',
+      bottom: '-4px',
+      left: '-4px',
+      zIndex: '3',
+      borderStyle: 'none',
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
+    }
+
+    const hoverDiv = {
       position: 'absolute',
       bottom: '-4px',
       left: '-4px',
       zIndex: '4',
+      borderStyle: 'solid',
+      borderWidth: '4px',
+      borderColor: Colours.secondary,
+      borderRadius: '4px',
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
+      color: Colours.white,
+      backgroundColor: 'rgba(29, 45, 88,0.8)'
+    }
+
+    const titleDiv = {
+      position: 'absolute',
+      top: '-4px',
+      left: '-4px',
+      zIndex: '7',
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.secondary,
@@ -160,15 +165,14 @@ class ClientCard extends Component {
 
     const descriptionDiv = {
       position: 'absolute',
-      top: '-4px',
+      bottom: '-4px',
       left: '-4px',
       zIndex: '6',
       borderStyle: 'solid',
       borderWidth: '4px',
-      borderColor: Colours.primary,
+      borderColor: Colours.secondary,
       borderRadius: '4px',
       backgroundColor: Colours.white,
-      height: this.props.height,
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
@@ -203,31 +207,47 @@ class ClientCard extends Component {
       maxWidth: this.props.maxWidth,
     }
 
+    const desktopTitle = 4.236
+    const mobileTitle = 2.618
+
     return (
       <div  style={boxContainer}
             onMouseEnter={this.onMouseover.bind(this)}
             onMouseLeave={this.onMouseout.bind(this)}
             onClick={this.onClick.bind(this)}
             ref={this.setWrapperRef}
-            id={`portfolio-item-${this.props.id}`}
+            id={`services-item-${this.props.id}`}
             className='card'>
         <div style={placeholderDiv} className='loading-image phHeader'></div>
-        <div style={imageDiv} className='card-image'>
-          <div style={{...descriptionDiv,...this.state.descriptionStyle}}>
-            <div style={boxText} className='whiteColour card-description'>
-              {this.props.clientDescription}
+        <div style={imageDiv} className='service-card-image'>
+          <MediaQuery minWidth={Breakpoints.mobile + 1}>
+            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}}>
+              <div style={boxText} className='whiteColour card-description'>
+                {this.props.clientDescription}
+              </div>
             </div>
-          </div>
-          <div style={{...hoverDiv,...this.state.hoverStyle}} className='card-hover'>
-            <div style={hoverText} className='hover-text'>
-              <MediaQuery minWidth={Breakpoints.mobile + 1}>
+          </MediaQuery>
+          <MediaQuery maxWidth={Breakpoints.mobile}>
+            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}}>
+              <div style={boxText} className='whiteColour card-description'>
+                {this.props.clientDescription}
+              </div>
+            </div>
+          </MediaQuery>
+          <MediaQuery minWidth={Breakpoints.mobile + 1}>
+            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} className='card-hover'>
+              <div style={hoverText} className='hover-text'>
                 <h3 className='whiteColour hover-header'> {this.props.hoverHeader} </h3>
-              </MediaQuery>
-              <MediaQuery maxWidth={Breakpoints.mobile}>
-                <h4 className='whiteColour hover-header'> {this.props.hoverHeader} </h4>
-              </MediaQuery>
+              </div>
             </div>
-          </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={Breakpoints.mobile}>
+            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} className='card-hover'>
+              <div style={hoverText} className='hover-text'>
+                <h4 className='whiteColour hover-header'> {this.props.hoverHeader} </h4>
+              </div>
+            </div>
+          </MediaQuery>
           <div style={{...titleDiv,...this.state.titleStyle}} className='card-title'>
             <div style={boxText}>
               <MediaQuery minWidth={Breakpoints.mobile + 1}>
@@ -238,6 +258,12 @@ class ClientCard extends Component {
               </MediaQuery>
             </div>
           </div>
+          <MediaQuery minWidth={Breakpoints.mobile + 1}>
+            <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} title={`service-icon-${this.props.id}`}></iframe>
+          </MediaQuery>
+          <MediaQuery maxWidth={Breakpoints.mobile}>
+            <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} title={`service-icon-${this.props.id}`}></iframe>
+          </MediaQuery>
         </div>
         <div style={hatchedShadow} className='card-shadow'>
         </div>
@@ -246,8 +272,8 @@ class ClientCard extends Component {
   }
 }
 
-ClientCard.defaultProps = {
+ServiceCard.defaultProps = {
   displayPlaceholder: false
 };
 
-export default ClientCard;
+export default ServiceCard;

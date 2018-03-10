@@ -171,3 +171,135 @@ CSS:
           url(./fonts/lineto-akkurat-pro-regular.ttf) format('truetype'), /* Safari, Android, iOS */
           url(./fonts/lineto-akkurat-pro-regular.svg) format('svg'); /* Legacy iOS */
   }
+
+
+
+
+  import React, { Component } from 'react';
+  import MediaQuery from 'react-responsive';
+
+  import Colours from "../../00-style/colours";
+  import Breakpoints from "../../00-style/breakpoints";
+
+  class ServiceCard extends Component {
+
+    render() {
+
+      const boxContainer = {
+        display: 'block',
+        position: 'relative',
+        margin: this.props.margin,
+        height: this.props.height,
+        width: this.props.width,
+        maxWidth: this.props.maxWidth,
+        flex: '0 0 auto'
+      }
+
+      const imageDiv = {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        zIndex: '2',
+        borderStyle: 'solid',
+        borderWidth: '4px',
+        borderColor: Colours.secondary,
+        borderRadius: '4px',
+        height: this.props.height,
+        width: this.props.width,
+        maxWidth: this.props.maxWidth,
+        display: 'block',
+        backgroundColor: Colours.white,
+      }
+
+      const titleDiv = {
+        position: 'absolute',
+        top: '-4px',
+        left: '-4px',
+        zIndex: '4',
+        borderStyle: 'solid',
+        borderWidth: '4px',
+        borderColor: Colours.primary,
+        borderRadius: '0 0 4px 4px',
+        backgroundColor: Colours.white,
+        color: Colours.secondary,
+        height: '25%',
+        width: this.props.width,
+        maxWidth: this.props.maxWidth,
+      }
+
+      const descriptionDiv = {
+        position: 'absolute',
+        bottom: '-4px',
+        left: '-4px',
+        zIndex: '3',
+        borderStyle: 'solid',
+        borderWidth: '4px',
+        borderColor: Colours.primary,
+        borderRadius: '4px',
+        backgroundColor: Colours.white,
+        height: '75%',
+        width: this.props.width,
+        maxWidth: this.props.maxWidth,
+        display: 'block',
+        overflow: 'scroll'
+      }
+
+      const boxText = {
+        padding: '8px 16px',
+        overflow: 'auto'
+      }
+
+      const hatchedShadow = {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        zIndex: '1',
+        borderStyle: 'solid',
+        borderWidth: '4px',
+        borderColor: Colours.secondary,
+        borderRadius: '4px',
+        background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
+        margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
+        height: this.props.height,
+        width: this.props.width,
+        maxWidth: this.props.maxWidth,
+      }
+
+      return (
+        <div  style={boxContainer}
+              id={`portfolio-item-${this.props.id}`}
+              className='card'>
+          <div style={imageDiv} className='card-image'>
+            <div style={titleDiv} className='card-title'>
+              <div style={boxText}>
+                <MediaQuery minWidth={Breakpoints.mobile + 1}>
+                  <h3>{this.props.title}</h3>
+                </MediaQuery>
+                <MediaQuery maxWidth={Breakpoints.mobile}>
+                  <h4>{this.props.title}</h4>
+                </MediaQuery>
+              </div>
+            </div>
+            <div style={descriptionDiv}>
+              <div style={boxText} className='whiteColour card-description'>
+                {this.props.clientDescription}
+              </div>
+            </div>
+          </div>
+          <div style={hatchedShadow} className='card-shadow'>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  export default ServiceCard;
+
+
+
+  <MediaQuery minWidth={Breakpoints.mobile + 1}>
+    <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}}></iframe>
+  </MediaQuery>
+  <MediaQuery maxWidth={Breakpoints.mobile}>
+    <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}}></iframe>
+  </MediaQuery>
