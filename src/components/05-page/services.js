@@ -14,7 +14,7 @@ class Services extends Component {
       <div className="container">
         <MediaQuery minWidth={Breakpoints.desktop}>
             <HeaderBox
-              height='6em' width='448px'
+              height='6em' width='320px'
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}
@@ -43,7 +43,7 @@ class Services extends Component {
 
         <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
             <HeaderBox
-              height='6em' width='420px'
+              height='6em' width='320px'
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}

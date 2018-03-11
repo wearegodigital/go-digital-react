@@ -3,6 +3,19 @@
   width: 100% !important;
   background-color: #1D2D58;
 }*/
+.service-icon {
+    width: 50%;
+    height: 0;
+    padding-top: 48%;
+    position: relative;
+}
+
+.service-icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 * {
   min-height: 0;
@@ -29,7 +42,7 @@
   }
 }
 
-html {font-size: 1em;}
+html {font-size: 1rem;}
 
 body {
   font-family: 'raleway';
@@ -40,7 +53,7 @@ body {
   margin:0;
 }
 
-p {margin-bottom: 1.3em;}
+p {margin-bottom: 1.3rem;}
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -50,26 +63,31 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0 !important;
-  font-size: 6.854em !important;
+  font-size: 6.854rem !important;
   font-family: 'cabin';
   font-weight: 600;
 }
 
 h2 {
-  font-size: 4.236em;
+  font-size: 4.236rem;
   font-family: 'cabin';
   font-weight: 600;
 }
 
 h3,.bm-item-list {
-  font-size: 2.618em;
+  font-size: 2.618rem;
   font-family: 'cabin';
   font-weight: 600;
 }
 
-h4 {
-  font-size: 1.618em;
+h4,.input-placeholder-text {
+  font-size: 1.618rem;
   font-weight: 500;
+}
+
+.input-placeholder-text {
+  font-family: 'raleway';
+  line-height: 1.45;
 }
 
 small, .font_small {font-size: 0.618em;}
@@ -262,7 +280,6 @@ small, .font_small {font-size: 0.618em;}
 .hero-slider, .hero-container {
   pointer-events: none;
 }
-
 /* Centre Text in Slider */
 
 .slick-initialized .slick-slide {
@@ -304,4 +321,39 @@ small, .font_small {font-size: 0.618em;}
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/** Potential Page Transitions **/
+
+.page-enter, .page-leave {
+  position: absolute;
+  -webkit-transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.page-enter {
+  left: 100vw;
+  opacity: 0;
+}
+
+.page-enter.page-enter-active {
+  -webkit-transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
+  opacity: 1;
+}
+
+.page-leave {
+  left: 0;
+  opacity: 1;
+}
+
+.page-leave.page-leave-active {
+  -webkit-transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
+  opacity: 0;
+}
+
+.container {
+  overflow-x: auto !important;
+  width: 100vw;
 }

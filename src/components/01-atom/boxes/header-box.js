@@ -67,7 +67,7 @@ render() {
     <div className='header-container' style={boxContainer}>
       <div className='header-text' style={textDiv}>
         <MediaQuery minWidth={Breakpoints.mobile + 1}>
-          <h2 style={headerText}> {this.props.text} </h2>
+          <h3 style={headerText}> {this.props.text} </h3>
         </MediaQuery>
         <MediaQuery maxWidth={Breakpoints.mobile}>
           <h3 style={headerText}> {this.props.text} </h3>

@@ -258,11 +258,12 @@ class ServiceCard extends Component {
               </MediaQuery>
             </div>
           </div>
+          {console.log(this.props.serviceIcon)}
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
-            <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} title={`service-icon-${this.props.id}`}></iframe>
+            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
-            <iframe src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} title={`service-icon-${this.props.id}`}></iframe>
+            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
           </MediaQuery>
         </div>
         <div style={hatchedShadow} className='card-shadow'>

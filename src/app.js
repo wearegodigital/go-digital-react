@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Switch} from 'react-router-dom';
 import MediaQuery from 'react-responsive';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import './style/style.css';
 
@@ -48,13 +49,22 @@ class App extends React.Component {
               <MediaQuery query="(min-width: 960px)">
                 <DesktopNavBar/>
               </MediaQuery>
-              <Switch>
-                <Route path="/contact-us" component={ContactUs} />
-                <Route path="/portfolio" component={Portfolio} />
-                <Route path="/services" component={Services} />
-                <Route path="/about-us" component={AboutUs} />
-                <Route path="/" component={HomePage} />
-              </Switch>
+              <Route render={({location}) => (
+                <ReactCSSTransitionReplace
+                  transitionName="page"
+                  transitionEnterTimeout={500}
+                  transitionLeaveTimeout={500}>
+                  <div key={location.pathname}>
+                    <Switch location={location}>
+                      <Route path="/contact-us" component={ContactUs} />
+                      <Route path="/portfolio" component={Portfolio} />
+                      <Route path="/services" component={Services} />
+                      <Route path="/about-us" component={AboutUs} />
+                      <Route path="/" component={HomePage} />
+                    </Switch>
+                  </div>
+                </ReactCSSTransitionReplace>
+              )}/>
             </div>
           </main>
         </div>
