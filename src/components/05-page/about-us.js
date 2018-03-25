@@ -20,14 +20,14 @@ class AboutUs extends Component {
 
     if(!page){
       return(
-        <div className="container">
+        <div className='container'>
           <SimpleTextPage
-            header=""
+            header=''
             content={<PlaceholderText />}
-            buttonWidth="224px"
-            contactButtonText=""
-            nextButtonText=""
-            nextButtonLink=""
+            buttonWidth='224px'
+            contactButtonText=''
+            nextButtonText=''
+            nextButtonLink=''
           />
         </div>
       );
@@ -49,14 +49,14 @@ class AboutUs extends Component {
 
     return(
 
-      <div className="container">
+      <div className='container'>
         <SimpleTextPage
           header={page.header_text}
           content={content}
-          buttonWidth="224px"
-          contactButtonText={page.contact_us_button_text}
-          nextButtonText={page.next_page_button_text}
-          nextButtonLink={page.next_page}
+          buttonWidth='224px'
+          contactButtonText='Get In Touch!'
+          nextButtonText='What We Do'
+          nextButtonLink='/services'
         />
       </div>
     );

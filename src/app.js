@@ -42,7 +42,7 @@ class App extends React.Component {
           <MenuPush/>
           <main id="page-wrap">
             <BackgroundAnimation/>
-            <div id="content">
+            <div id="page-content">
               <MediaQuery query="(max-width: 959px)">
                 <MobileNavBar/>
               </MediaQuery>

@@ -39,7 +39,7 @@ class ContactUs extends Component {
             verticalMargin={this.props.verticalMargin}
             shadowMargin={this.props.shadowMargin}
             inputName="message"
-            inputPlaceholder="Your message"/>
+            inputPlaceholder="Your Message"/>
 
           <FormButtonGroup
             horizontalMargin={this.props.horizontalMargin}

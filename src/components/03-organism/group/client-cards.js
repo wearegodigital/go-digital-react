@@ -45,24 +45,24 @@ class ClientCards extends Component {
           maxWidth={this.props.maxWidth}
           margin={`0 ${this.props.horizontalMargin}px 0 0`}
           shadowMargin={this.props.shadowMargin}
-          title={page.client_name}
+          title={page.partner_name}
           hoverHeader={page.hover_text}
           id={page.id}
           backgroundImage={`http://directus.wearegodigital.com${page.cover_photo.data.url}`}
           clientDescription={<div>
                               <div className='secondaryColour'>
-                                <h4> {page.client_name} </h4>
+                                <h4> {page.partner_name} </h4>
                               </div>
                               <div className='primaryColour'>
                                 <MediaQuery minWidth={Breakpoints.mobile}>
-                                  <h3 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.client_summary} </h3>
+                                  <h3 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.partner_summary} </h3>
                                 </MediaQuery>
                                 <MediaQuery maxWidth={Breakpoints.mobile - 1}>
-                                  <h4 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.client_summary} </h4>
+                                  <h4 style={{padding:'0.5em 0',fontWeight:'700'}}> {page.partner_summary} </h4>
                                 </MediaQuery>
                               </div>
                               <div className='blackColour'>
-                                {ReactHtmlParser(page.client_description)}
+                                {ReactHtmlParser(page.partner_description)}
                               </div>
                             </div>}/>
       );

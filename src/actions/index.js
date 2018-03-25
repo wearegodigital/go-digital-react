@@ -4,7 +4,7 @@ export const FETCH_PAGES = 'fetch_pages';
 export const FETCH_PAGE = 'fetch_page';
 
 const ROOT_URL = 'http://directus.wearegodigital.com/api/1.1';
-const API_KEY = '?access_token=6uwoArMAt54ivonkErdmFlgJwiZE1TvP';
+const API_KEY = '?access_token=8npJoX6OBWslwyiBc4pXLuEpu41UjeOl';
 
 export function fetchPages(name) {
   const request = axios.get(`${ROOT_URL}/tables/${name}/rows/${API_KEY}`)/*.then(response => {

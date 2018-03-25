@@ -41,9 +41,10 @@ render() {
   const boxText = {
     padding: '16px',
     overflow: 'auto',
-    height: 'calc(100% - 36px)',
-    width: 'calc(100% - 36px)',
-    maxWidth: calculateMaxWidth,
+    height: `calc(${this.props.height} - 36px)`,
+    width: `calc(${this.props.width} - 36px)`,
+    maxWidth: `calc(${calculateMaxWidth} - 36px)`,
+    resize: 'none',
     backgroundColor: Colours.white,
     Color: Colours.secondary,
     borderStyle: 'none',

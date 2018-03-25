@@ -119,7 +119,7 @@ small, .font_small {font-size: 0.618em;}
       top: 39px;
   }
 
-  #content {
+  #page-content {
     padding-top: 96px;
   }
 }
@@ -133,7 +133,7 @@ small, .font_small {font-size: 0.618em;}
       top: 52px;
   }
 
-  #content {
+  #page-content {
     padding-top: 128px;
   }
 }

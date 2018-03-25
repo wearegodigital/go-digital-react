@@ -61,7 +61,7 @@ class AccentFormButton extends Component {
       borderColor: Colours.primary,
       borderRadius: '4px',
       backgroundColor: this.state.fillColour,
-      fontSize: '1.618em',
+      fontSize: '1.618rem',
       fontFamily: 'cabin',
       fontWeight: '400',
       height: '100%',
