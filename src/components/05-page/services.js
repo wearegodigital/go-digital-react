@@ -6,9 +6,17 @@ import Margins from "../00-style/margins";
 import HeaderBox from '../01-atom/boxes/header-box';
 import ServiceCards from '../03-organism/group/service-cards';
 import ButtonGroup from '../03-organism/group/buttons';
+import NavButtonGroup from '../03-organism/group/nav-buttons';
 
 class Services extends Component {
   render() {
+
+    const buttonContainer = {
+      display: 'flex',
+      flexFlow: `row nowrap`,
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    }
 
     return(
       <div className="container">
@@ -28,17 +36,26 @@ class Services extends Component {
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}/>
 
-            <ButtonGroup
-              horizontalMargin={Margins.desktop.horizontal}
-              verticalMargin={Margins.desktop.vertical}
-              direction='row'
-              buttonHeight='64px'
-              inactiveButtonWidth='328px'
-              inactiveButtonText="Who We've Worked With"
-              inactiveButtonLink='/portfolio'
-              accentButtonWidth='240px'
-              accentButtonText="Let's Do This!"
-              accentButtonLink='/contact-us'/>
+            <div style={buttonContainer}>
+              <ButtonGroup
+                horizontalMargin={Margins.desktop.horizontal}
+                verticalMargin={Margins.desktop.vertical}
+                direction='row'
+                buttonHeight='64px'
+                inactiveButtonWidth='328px'
+                inactiveButtonText="Who We've Worked With"
+                inactiveButtonLink='/portfolio'
+                accentButtonWidth='240px'
+                accentButtonText="Let's Do This!"
+                accentButtonLink='/contact-us'/>
+
+              <NavButtonGroup
+                scrollAmount={`${600 + Margins.desktop.horizontal}px`}
+                scrollArea='card-container'
+                height='72px'
+                horizontalMargin={Margins.desktop.horizontal}
+                verticalMargin={Margins.desktop.vertical}/>
+            </div>
         </MediaQuery>
 
         <MediaQuery minWidth={Breakpoints.mobile + 1} maxWidth={Breakpoints.desktop - 1}>
@@ -57,16 +74,25 @@ class Services extends Component {
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}/>
 
-            <ButtonGroup
-              horizontalMargin={Margins.tablet.horizontal}
-              verticalMargin={Margins.tablet.vertical}
-              buttonHeight='48px'
-              inactiveButtonWidth='328px'
-              inactiveButtonText="Who We've Worked With"
-              inactiveButtonLink='/portfolio'
-              accentButtonWidth='240px'
-              accentButtonText="Let's Do This!"
-              accentButtonLink='/contact-us'/>
+            <div style={buttonContainer}>
+              <ButtonGroup
+                horizontalMargin={Margins.tablet.horizontal}
+                verticalMargin={Margins.tablet.vertical}
+                buttonHeight='48px'
+                inactiveButtonWidth='328px'
+                inactiveButtonText="Who We've Worked With"
+                inactiveButtonLink='/portfolio'
+                accentButtonWidth='240px'
+                accentButtonText="Let's Do This!"
+                accentButtonLink='/contact-us'/>
+
+              <NavButtonGroup
+                scrollAmount={`${600 + Margins.tablet.horizontal}px`}
+                scrollArea='card-container'
+                height='56px'
+                horizontalMargin={Margins.tablet.horizontal}
+                verticalMargin={Margins.tablet.vertical}/>
+            </div>
         </MediaQuery>
 
         <MediaQuery maxWidth={Breakpoints.mobile}>

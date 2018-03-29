@@ -110,9 +110,9 @@ $desktop-breakpoint-min1: 959px;
             height:auto;
 
             .random-shape:after {
-                margin: 3rem;
+                margin: 5rem;
                 color: $shape-color;
-                font-size: 3em;
+                font-size: 5rem;
                 opacity: #{0.5 + $shape-opacity * 0.1};
                 content: $shape-type;
             }
@@ -152,9 +152,9 @@ $desktop-breakpoint-min1: 959px;
             height:auto;
 
             .random-shape:after {
-                margin: 3rem;
+                margin: 4rem;
                 color: $shape-color;
-                font-size: 3em;
+                font-size: 4rem;
                 opacity: #{0.5 + $shape-opacity * 0.1};
                 content: $shape-type;
             }
@@ -205,7 +205,7 @@ $desktop-breakpoint-min1: 959px;
             .random-shape:after {
                 margin: 3rem;
                 color: $shape-color;
-                font-size: 3em;
+                font-size: 3rem;
                 opacity: #{0.5 + $shape-opacity * 0.1};
                 content: $shape-type;
             }

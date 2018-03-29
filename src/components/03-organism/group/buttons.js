@@ -7,7 +7,7 @@ class ButtonGroup extends Component {
   render() {
     const buttons = {
       display: 'flex',
-      flexFlow: `${this.props.direction} wrap`,
+      flexFlow: `${this.props.direction} nowrap`,
       alignItems: 'flex-start',
       justifyContent: 'flex-start',
       margin:`${this.props.verticalMargin}px ${this.props.horizontalMargin}px`
