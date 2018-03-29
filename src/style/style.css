@@ -42,7 +42,12 @@
   }
 }
 
-html {font-size: 1rem;}
+html {
+  font-size: 1rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow: -moz-scrollbars-none;
+}
 
 body {
   font-family: 'raleway';
@@ -356,4 +361,26 @@ small, .font_small {font-size: 0.618em;}
 .container {
   overflow-x: auto !important;
   width: 100vw;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+  .card-container .card:last-child {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 959px) {
+  .card-container .card:last-child {
+    padding-right: 48px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .card-container .card:last-child {
+    padding-right: 80px;
+  }
 }

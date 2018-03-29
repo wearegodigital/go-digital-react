@@ -161,6 +161,7 @@ class ServiceCard extends Component {
       height: 'auto',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
+      overflowY: 'hidden',
     }
 
     const descriptionDiv = {
@@ -207,8 +208,8 @@ class ServiceCard extends Component {
       maxWidth: this.props.maxWidth,
     }
 
-    const desktopTitle = 4.236
-    const mobileTitle = 2.618
+    const desktopTitle = 2.618 * 1.2
+    const mobileTitle = 1.618 * 1.2
 
     return (
       <div  style={boxContainer}
@@ -221,49 +222,53 @@ class ServiceCard extends Component {
         <div style={placeholderDiv} className='loading-image phHeader'></div>
         <div style={imageDiv} className='service-card-image'>
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
-            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}}>
+            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${desktopTitle}rem - 16px)`,}}}>
               <div style={boxText} className='whiteColour card-description'>
                 {this.props.clientDescription}
               </div>
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
-            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}}>
+            <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${mobileTitle}rem - 16px)`,}}}>
               <div style={boxText} className='whiteColour card-description'>
                 {this.props.clientDescription}
               </div>
             </div>
           </MediaQuery>
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
-            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} className='card-hover'>
+            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${desktopTitle}rem - 16px)`,}}} className='card-hover'>
               <div style={hoverText} className='hover-text'>
                 <h3 className='whiteColour hover-header'> {this.props.hoverHeader} </h3>
               </div>
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
-            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} className='card-hover'>
+            <div style={{...hoverDiv,...this.state.hoverStyle,...{height: `calc(${this.props.height} - ${mobileTitle}em - 16px)`,}}} className='card-hover'>
               <div style={hoverText} className='hover-text'>
                 <h4 className='whiteColour hover-header'> {this.props.hoverHeader} </h4>
               </div>
             </div>
           </MediaQuery>
-          <div style={{...titleDiv,...this.state.titleStyle}} className='card-title'>
-            <div style={boxText}>
-              <MediaQuery minWidth={Breakpoints.mobile + 1}>
-                <h3>{this.props.title}</h3>
-              </MediaQuery>
-              <MediaQuery maxWidth={Breakpoints.mobile}>
-                <h4>{this.props.title}</h4>
-              </MediaQuery>
-            </div>
-          </div>
-          {console.log(this.props.serviceIcon)}
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
-            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}em)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
+            <div style={{...titleDiv,...this.state.titleStyle,...{height: `calc(${desktopTitle}rem + 16px)`,}}} className='card-title'>
+              <div style={boxText}>
+                  <h3>{this.props.title}</h3>
+              </div>
+            </div>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
-            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}em)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
+            <div style={{...titleDiv,...this.state.titleStyle,...{height: `calc(${mobileTitle}rem + 16px)`,}}} className='card-title'>
+              <div style={boxText}>
+                  <h4>{this.props.title}</h4>
+              </div>
+            </div>
+          </MediaQuery>
+          {console.log(this.props.serviceIcon)}
+          <MediaQuery minWidth={Breakpoints.mobile + 1}>
+            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}rem - 16px)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
+          </MediaQuery>
+          <MediaQuery maxWidth={Breakpoints.mobile}>
+            <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${mobileTitle}rem - 16px)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
           </MediaQuery>
         </div>
         <div style={hatchedShadow} className='card-shadow'>
