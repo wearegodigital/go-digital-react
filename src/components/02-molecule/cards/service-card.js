@@ -165,7 +165,7 @@ class ServiceCard extends Component {
       borderStyle: 'solid',
       borderWidth: '4px',
       borderColor: Colours.secondary,
-      borderRadius: '0 0 4px 4px',
+      borderRadius: '4px 4px 0 0',
       backgroundColor: Colours.white,
       color: Colours.secondary,
       height: 'auto',
