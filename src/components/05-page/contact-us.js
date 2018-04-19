@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 
+import { fillHeight } from "../00-functions/helper";
 import Breakpoints from "../00-style/breakpoints";
 import Margins from "../00-style/margins";
 import HeaderBox from '../01-atom/boxes/header-box';
@@ -25,7 +26,7 @@ class ContactUs extends Component {
             maxInputWidth='444px'
             inputHeight='48px'
             maxTAWidth='640px'
-            TAHeight='20vh'
+            TAHeight={`calc(${fillHeight('desktop','6em','240px')}`}
             buttonHeight='64px'
             buttonWidth='240px'
             horizontalMargin={Margins.desktop.horizontal}
@@ -46,7 +47,7 @@ class ContactUs extends Component {
             maxInputWidth='384px'
             inputHeight='48px'
             maxTAWidth='640px'
-            TAHeight='24vh'
+            TAHeight={`calc(${fillHeight('tablet','6em','208px')}`}
             buttonHeight='64px'
             buttonWidth='240px'
             horizontalMargin={Margins.tablet.horizontal}
@@ -67,7 +68,7 @@ class ContactUs extends Component {
             maxInputWidth='240px'
             inputHeight='48px'
             maxTAWidth='400px'
-            TAHeight='24vh'
+            TAHeight={`calc(${fillHeight('mobile','4em','128px')}`}
             buttonHeight='48px'
             buttonWidth='240px'
             horizontalMargin={Margins.mobile.horizontal}

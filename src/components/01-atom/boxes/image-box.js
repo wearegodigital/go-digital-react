@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Colours from "../../00-style/colours";
 
-class TextBox extends Component {
+class ImageBox extends Component {
 
 render() {
   var calculateMaxWidth = ''
@@ -22,7 +22,7 @@ render() {
   const boxContainer = {
     display: 'block',
     position: 'relative',
-    margin: `${this.props.verticalMargin}px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.verticalMargin + this.props.shadowMargin}px ${this.props.horizontalMargin}px`,
+    margin: `${this.props.verticalMargin}px ${(this.props.shadowMargin*2)}px ${this.props.verticalMargin + this.props.shadowMargin}px ${0}px`,
     height: this.props.height,
     width: this.props.width,
     maxWidth: calculateMaxWidth,
@@ -30,7 +30,33 @@ render() {
     minHeight: this.props.minHeight,
   }
 
-  const textDiv = {
+  var displayProperty = '';
+
+  if(this.props.displayPlaceholder){
+    displayProperty = 'block';
+  } else {
+    displayProperty = 'none';
+  }
+
+  const placeholderDiv = {
+    position: 'absolute',
+    top: '0',
+    left: '0',
+    zIndex: '3',
+    borderStyle: 'solid',
+    borderWidth: '4px',
+    borderColor: Colours.secondary,
+    borderRadius: '4px',
+    display: displayProperty,
+    backgroundColor: Colours.white,
+    height: this.props.height,
+    width: this.props.width,
+    maxWidth: calculateMaxWidth,
+    maxHeight: calculateMaxHeight,
+    minHeight: this.props.minHeight,
+  }
+
+  const imageDiv = {
     position: 'absolute',
     top: '0',
     left: '0',
@@ -47,11 +73,11 @@ render() {
     minHeight: this.props.minHeight,
     display: 'block',
     overflow: 'scroll',
-  }
 
-  const boxText = {
-    padding: '16px',
-    overflow: 'auto'
+    backgroundImage: `url("${this.props.image}")`,
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
   }
 
   const hatchedShadow = {
@@ -73,21 +99,21 @@ render() {
   }
 
   return (
-    <div className='text-container' style={boxContainer}>
-      <div className='text-content' style={textDiv}>
-        <div style={boxText}>{this.props.text}</div>
-      </div>
-      <div className='text-shadow' style={hatchedShadow}>
-      </div>
+    <div className='image-container' style={boxContainer}>
+      <div style={placeholderDiv} className='loading-image phHeader'></div>
+      <div className='image-content' style={imageDiv}></div>
+      <div className='image-shadow' style={hatchedShadow}></div>
     </div>
   );
 }
 }
 
-TextBox.defaultProps = {
+ImageBox.defaultProps = {
   maxWidth: 'width',
   maxHeight: 'height',
-  minHeight: '200px',
+  minHeight: '100px',
+  image: 'url("../assets/img/services/half-circles.png")',
+  displayPlaceholder: false
 };
 
-export default TextBox;
+export default ImageBox;

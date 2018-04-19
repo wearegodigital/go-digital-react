@@ -76,6 +76,8 @@ class ServiceCard extends Component {
       position: 'relative',
       margin: this.props.margin,
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       flex: '0 0 auto'
@@ -91,6 +93,8 @@ class ServiceCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
@@ -116,6 +120,8 @@ class ServiceCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: displayProperty,
@@ -128,6 +134,8 @@ class ServiceCard extends Component {
       left: '-4px',
       zIndex: '3',
       borderStyle: 'none',
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
     }
@@ -141,6 +149,8 @@ class ServiceCard extends Component {
       borderWidth: '4px',
       borderColor: Colours.secondary,
       borderRadius: '4px',
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       color: Colours.white,
@@ -174,6 +184,8 @@ class ServiceCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       backgroundColor: Colours.white,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
@@ -188,8 +200,7 @@ class ServiceCard extends Component {
     }
 
     const boxText = {
-      padding: '8px 16px',
-      overflow: 'auto'
+      overflow: 'auto',
     }
 
     const hatchedShadow = {
@@ -204,6 +215,8 @@ class ServiceCard extends Component {
       background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
       margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
     }
@@ -223,14 +236,14 @@ class ServiceCard extends Component {
         <div style={imageDiv} className='service-card-image'>
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
             <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${desktopTitle}rem - 16px)`,}}}>
-              <div style={boxText} className='whiteColour card-description'>
+              <div style={{...boxText,...{padding: `calc(${desktopTitle}rem ) 16px`,}}} className='whiteColour card-description'>
                 {this.props.clientDescription}
               </div>
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
             <div style={{...descriptionDiv,...this.state.descriptionStyle,...{height: `calc(${this.props.height} - ${mobileTitle}rem - 16px)`,}}}>
-              <div style={boxText} className='whiteColour card-description'>
+              <div style={{...boxText,...{padding: `calc(${desktopTitle}rem) 16px`,}}} className='whiteColour card-description'>
                 {this.props.clientDescription}
               </div>
             </div>
@@ -251,19 +264,18 @@ class ServiceCard extends Component {
           </MediaQuery>
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
             <div style={{...titleDiv,...this.state.titleStyle,...{height: `calc(${desktopTitle}rem + 16px)`,}}} className='card-title'>
-              <div style={boxText}>
+              <div style={{...boxText,...{padding: '8px 16px',}}}>
                   <h3>{this.props.title}</h3>
               </div>
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={Breakpoints.mobile}>
             <div style={{...titleDiv,...this.state.titleStyle,...{height: `calc(${mobileTitle}rem + 16px)`,}}} className='card-title'>
-              <div style={boxText}>
+              <div style={{...boxText,...{padding: '8px 16px',}}}>
                   <h4>{this.props.title}</h4>
               </div>
             </div>
           </MediaQuery>
-          {console.log(this.props.serviceIcon)}
           <MediaQuery minWidth={Breakpoints.mobile + 1}>
             <img src={this.props.serviceIcon} style={{...iframe,...{height: `calc(${this.props.height} - ${desktopTitle}rem - 16px)`,}}} id={`service-icon-${this.props.id}`} alt={`icon for ${this.props.title}`}/>
           </MediaQuery>

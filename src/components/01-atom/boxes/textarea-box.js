@@ -17,6 +17,7 @@ render() {
     position: 'relative',
     margin: `${this.props.verticalMargin}px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.verticalMargin + this.props.shadowMargin}px ${this.props.horizontalMargin}px`,
     height: this.props.height,
+    minHeight: this.props.minHeight,
     width: this.props.width,
     maxWidth: calculateMaxWidth,
   }
@@ -32,6 +33,7 @@ render() {
     borderRadius: '4px',
     backgroundColor: Colours.white,
     height: this.props.height,
+    minHeight: this.props.minHeight,
     width: this.props.width,
     maxWidth: calculateMaxWidth,
     display: 'block',
@@ -41,7 +43,8 @@ render() {
   const boxText = {
     padding: '16px',
     overflow: 'auto',
-    height: `calc(${this.props.height} - 36px)`,
+    minHeight: this.props.minHeight,
+    height: 'calc(100% - 36px)',
     width: `calc(${this.props.width} - 36px)`,
     maxWidth: `calc(${calculateMaxWidth} - 36px)`,
     resize: 'none',
@@ -62,6 +65,7 @@ render() {
     background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
     margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
     height: this.props.height,
+    minHeight: this.props.minHeight,
     width: this.props.width,
     maxWidth: calculateMaxWidth,
   }

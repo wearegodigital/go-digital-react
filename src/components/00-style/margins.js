@@ -2,17 +2,20 @@ var Margins = {
   desktop: {
     horizontal: 64,
     vertical: 32,
-    shadow: 16
+    shadow: 16,
+    header: 128
 },
   tablet: {
     horizontal: 32,
     vertical: 32,
-    shadow: 16
+    shadow: 16,
+    header: 96
 },
   mobile: {
     horizontal: 32,
     vertical: 16,
-    shadow: 8
+    shadow: 8,
+    header: 96
 }};
 
 export default Margins;

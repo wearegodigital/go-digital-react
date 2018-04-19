@@ -33,6 +33,7 @@ class ContactUs extends Component {
 
           <TextareaBox
             maxWidth={this.props.maxTAWidth}
+            minHeight={`calc(${this.props.inputHeight} + ${this.props.inputHeight})`}
             height={this.props.TAHeight}
             width={`calc(100vw - ${this.props.horizontalMargin * 2 + this.props.shadowMargin}px)`}
             horizontalMargin={this.props.horizontalMargin}

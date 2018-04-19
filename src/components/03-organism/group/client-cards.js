@@ -49,7 +49,7 @@ class ClientCards extends Component {
           hoverHeader={page.hover_text}
           id={page.id}
           backgroundImage={`http://directus.wearegodigital.com${page.cover_photo.data.url}`}
-          clientDescription={<div>
+          clientDescription={<div className="cms-content">
                               <div className='secondaryColour'>
                                 <h4> {page.partner_name} </h4>
                               </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 
+import { fillHeight } from "../00-functions/helper";
 import Breakpoints from "../00-style/breakpoints";
 import Margins from "../00-style/margins";
 import HeaderBox from '../01-atom/boxes/header-box';
@@ -22,7 +23,7 @@ class SimpleTextPage extends Component {
 
           <TextBox
             maxWidth='900px'
-            height='40vh'
+            height={`calc(${fillHeight('desktop','6em','64px')}`}
             width={`calc(100vw - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
             horizontalMargin={Margins.desktop.horizontal}
             verticalMargin={Margins.desktop.vertical}
@@ -53,7 +54,7 @@ class SimpleTextPage extends Component {
 
           <TextBox
             maxWidth='900px'
-            height='40vh'
+            height={`calc(${fillHeight('tablet','6em','48px')}`}
             width={`calc(100vw - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
             horizontalMargin={Margins.tablet.horizontal}
             verticalMargin={Margins.tablet.vertical}
@@ -82,7 +83,7 @@ class SimpleTextPage extends Component {
 
           <TextBox
             maxWidth='900px'
-            height='36vh'
+            height={`calc(${fillHeight('mobile','4em','48px')}`}
             width={`calc(100vw - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
             horizontalMargin={Margins.mobile.horizontal}
             verticalMargin={Margins.mobile.vertical}
@@ -96,7 +97,7 @@ class SimpleTextPage extends Component {
             inactiveButtonWidth='192px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
-            accentButtonWidth='160px'
+            accentButtonWidth='192px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>

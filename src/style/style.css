@@ -44,9 +44,6 @@
 
 html {
   font-size: 1rem;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  overflow: -moz-scrollbars-none;
 }
 
 body {
@@ -58,7 +55,10 @@ body {
   margin:0;
 }
 
-p {margin-bottom: 1.3rem;}
+p {
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  }
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -368,19 +368,28 @@ small, .font_small {font-size: 0.618em;}
 }
 
 @media screen and (max-width: 540px) {
-  .card-container .card:last-child {
+  .card-container .card:last-child, .card-container .team-member:last-child {
     padding-right: 40px;
   }
 }
 
 @media screen and (min-width: 541px) and (max-width: 959px) {
-  .card-container .card:last-child {
+  .card-container .card:last-child, .card-container .team-member:last-child {
     padding-right: calc(100vw - 632px);
   }
 }
 
 @media screen and (min-width: 960px) {
-  .card-container .card:last-child {
+  .card-container .card:last-child, .card-container .team-member:last-child {
     padding-right: calc(100vw - 664px);
   }
+}
+
+.cms-content h4 strong {
+  color: #1D2D58;
+}
+
+.cms-content h4 {
+  color: #B64F59;
+  padding: 0.5em 0;
 }

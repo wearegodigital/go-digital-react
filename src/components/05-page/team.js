@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 
+import { fillHeight } from "../00-functions/helper";
 import Breakpoints from "../00-style/breakpoints";
 import Margins from "../00-style/margins";
 import HeaderBox from '../01-atom/boxes/header-box';
-import ClientCards from '../03-organism/group/client-cards';
+import TeamMembers from '../03-organism/group/team-members';
 import ButtonGroup from '../03-organism/group/buttons';
 import NavButtonGroup from '../03-organism/group/nav-buttons';
 
-class Portfolio extends Component {
+class Team extends Component {
   render() {
 
     const buttonContainer = {
@@ -26,15 +27,15 @@ class Portfolio extends Component {
               horizontalMargin={Margins.desktop.horizontal}
               verticalMargin={Margins.desktop.vertical}
               shadowMargin={Margins.desktop.shadow}
-              text='Our Clients...'/>
+              text='Our Team...'/>
 
-            <ClientCards
-              height='40vh'
+            <TeamMembers
+              height={fillHeight('desktop','6em','64px')}
               maxWidth='600px'
               width={`calc(100vw - ${Margins.desktop.horizontal * 2 + Margins.desktop.shadow}px)`}
               horizontalMargin={Margins.desktop.horizontal}
-              verticalMargin={Margins.desktop.vertical}
-              shadowMargin={Margins.desktop.shadow}/>
+              shadowMargin={Margins.desktop.shadow}
+              />
 
             <div style={buttonContainer}>
               <ButtonGroup
@@ -42,11 +43,11 @@ class Portfolio extends Component {
                 verticalMargin={Margins.desktop.vertical}
                 direction='row'
                 buttonHeight='64px'
-                inactiveButtonWidth=''
-                inactiveButtonText={this.props.nextButtonText}
-                inactiveButtonLink={this.props.nextButtonLink}
+                inactiveButtonWidth='240px'
+                inactiveButtonText='What We Do'
+                inactiveButtonLink='/services'
                 accentButtonWidth='240px'
-                accentButtonText="Let's Do This!"
+                accentButtonText='Get In Touch!'
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -64,14 +65,13 @@ class Portfolio extends Component {
               horizontalMargin={Margins.tablet.horizontal}
               verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}
-              text='Our Clients...'/>
+              text='Our Team...'/>
 
-            <ClientCards
-              height='40vh'
+            <TeamMembers
+              height={fillHeight('tablet','6em','0px')}
               maxWidth='600px'
               width={`calc(100vw - ${Margins.tablet.horizontal * 2 + Margins.tablet.shadow}px)`}
               horizontalMargin={Margins.tablet.horizontal}
-              verticalMargin={Margins.tablet.vertical}
               shadowMargin={Margins.tablet.shadow}/>
 
             <div style={buttonContainer}>
@@ -79,11 +79,11 @@ class Portfolio extends Component {
                 horizontalMargin={Margins.tablet.horizontal}
                 verticalMargin={Margins.tablet.vertical}
                 buttonHeight='48px'
-                inactiveButtonWidth=''
-                inactiveButtonText={this.props.nextButtonText}
-                inactiveButtonLink={this.props.nextButtonLink}
+                inactiveButtonWidth='240px'
+                inactiveButtonText='What We Do'
+                inactiveButtonLink='/services'
                 accentButtonWidth='240px'
-                accentButtonText="Let's Do This!"
+                accentButtonText='Get In Touch!'
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -101,25 +101,24 @@ class Portfolio extends Component {
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}
-              text='Our Clients...'/>
+              text='Our Team...'/>
 
-            <ClientCards
-              height='36vh'
+            <TeamMembers
+              height={fillHeight('mobile','4em','0px')}
               maxWidth='600px'
               width={`calc(100vw - ${Margins.mobile.horizontal * 2 + Margins.mobile.shadow}px)`}
               horizontalMargin={Margins.mobile.horizontal}
-              verticalMargin={Margins.mobile.vertical}
               shadowMargin={Margins.mobile.shadow}/>
 
             <ButtonGroup
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               buttonHeight='48px'
-              inactiveButtonWidth=''
-              inactiveButtonText={this.props.nextButtonText}
-              inactiveButtonLink={this.props.nextButtonLink}
+              inactiveButtonWidth='192px'
+              inactiveButtonText='What We Do'
+              inactiveButtonLink='/services'
               accentButtonWidth='192px'
-              accentButtonText="Let's Do This!"
+              accentButtonText='Get In Touch!'
               accentButtonLink='/contact-us'/>
         </MediaQuery>
       </div>
@@ -127,4 +126,4 @@ class Portfolio extends Component {
   }
 }
 
-export default Portfolio;
+export default Team;

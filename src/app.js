@@ -15,8 +15,9 @@ import SVGLoader from './components/04-template/svg-preloader.js';
 
 import HomePage from './components/05-page/homepage';
 import AboutUs from './components/05-page/about-us';
+import Team from './components/05-page/team';
 import Services from './components/05-page/services';
-import Portfolio from './components/05-page/portfolio';
+import OurPartners from './components/05-page/our-partners';
 import ContactUs from './components/05-page/contact-us';
 
 
@@ -57,8 +58,9 @@ class App extends React.Component {
                   <div key={location.pathname}>
                     <Switch location={location}>
                       <Route path="/contact-us" component={ContactUs} />
-                      <Route path="/portfolio" component={Portfolio} />
+                      <Route path="/our-partners" component={OurPartners} />
                       <Route path="/services" component={Services} />
+                      <Route path="/team" component={Team} />
                       <Route path="/about-us" component={AboutUs} />
                       <Route path="/" component={HomePage} />
                     </Switch>

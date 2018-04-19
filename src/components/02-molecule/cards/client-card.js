@@ -76,6 +76,8 @@ class ClientCard extends Component {
       position: 'relative',
       margin: this.props.margin,
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       flex: '0 0 auto'
@@ -91,6 +93,8 @@ class ClientCard extends Component {
       borderColor: Colours.primary,
       borderRadius: '4px',
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       color: Colours.white,
@@ -107,6 +111,8 @@ class ClientCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
@@ -115,7 +121,25 @@ class ClientCard extends Component {
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
+    }
 
+    const imageOverlayDiv = {
+      position: 'absolute',
+      top: '-4px',
+      left: '-4px',
+      zIndex: '3',
+      borderStyle: 'solid',
+      borderWidth: '4px',
+      borderColor: Colours.secondary,
+      borderRadius: '4px',
+      height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
+      width: this.props.width,
+      maxWidth: this.props.maxWidth,
+      display: 'block',
+      backgroundColor: Colours.primary,
+      opacity: '0.3',
     }
 
     var displayProperty = '';
@@ -136,6 +160,8 @@ class ClientCard extends Component {
       borderColor: Colours.secondary,
       borderRadius: '4px',
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: displayProperty,
@@ -169,6 +195,8 @@ class ClientCard extends Component {
       borderRadius: '4px',
       backgroundColor: Colours.white,
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
@@ -199,6 +227,8 @@ class ClientCard extends Component {
       background:  `repeating-linear-gradient(45deg, ${Colours.secondary}, ${Colours.secondary} 2px, rgba(255, 255, 255, 0.75) 2px, rgba(255, 255, 255, 0.75) 8px)`,
       margin: `${this.props.shadowMargin}px 0 0 ${this.props.shadowMargin}px`,
       height: this.props.height,
+      maxHeight: this.props.width,
+      minHeight: '200px',
       width: this.props.width,
       maxWidth: this.props.maxWidth,
     }
@@ -218,6 +248,7 @@ class ClientCard extends Component {
               {this.props.clientDescription}
             </div>
           </div>
+          <div style={imageOverlayDiv} className='card-image-overlay'></div>
           <div style={{...hoverDiv,...this.state.hoverStyle}} className='card-hover'>
             <div style={hoverText} className='hover-text'>
               <MediaQuery minWidth={Breakpoints.mobile + 1}>
