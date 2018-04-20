@@ -78,7 +78,7 @@ class MenuPush extends Component {
             <MenuItem href="/" id="home" title="Home"/>
             <MenuItem href="/about-us" id="about-us" title="About Us"/>
             <MenuItem href="/services" id="services" title="Services"/>
-            <MenuItem href="/portfolio" id="portfolio" title="Portfolio"/>
+            <MenuItem href="/our-partners" id="our-partners" title="Our Partners"/>
             <MenuItem href="/contact-us" id="contact-us" title="Contact Us"/>
           </Menu>
         </MediaQuery>
