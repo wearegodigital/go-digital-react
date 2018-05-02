@@ -79,9 +79,10 @@ class ClientCards extends Component {
 
       width:'auto',
       overflowX: 'auto',
+      overflow: '-moz-scrollbars-none',
       WebkitOverflowScrolling: 'touch',
       msOverflowStyle: '-ms-autohiding-scrollbar',
-      padding: `0px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.shadowMargin+8}px ${this.props.horizontalMargin}px`
+      padding: `0px ${this.props.horizontalMargin + (this.props.shadowMargin*2)}px ${this.props.shadowMargin+8}px ${this.props.horizontalMargin}px`,
     }
 
     return(
