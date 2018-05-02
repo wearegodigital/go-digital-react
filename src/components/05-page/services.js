@@ -43,8 +43,8 @@ class Services extends Component {
                 verticalMargin={Margins.desktop.vertical}
                 direction='row'
                 buttonHeight='64px'
-                inactiveButtonWidth='328px'
-                inactiveButtonText="Who We've Worked With"
+                inactiveButtonWidth='224px'
+                inactiveButtonText="Our Partners"
                 inactiveButtonLink='/our-partners'
                 accentButtonWidth='240px'
                 accentButtonText="Let's Do This!"
@@ -80,8 +80,8 @@ class Services extends Component {
                 horizontalMargin={Margins.tablet.horizontal}
                 verticalMargin={Margins.tablet.vertical}
                 buttonHeight='48px'
-                inactiveButtonWidth='328px'
-                inactiveButtonText="Who We've Worked With"
+                inactiveButtonWidth='224px'
+                inactiveButtonText="Our Partners"
                 inactiveButtonLink='/our-partners'
                 accentButtonWidth='240px'
                 accentButtonText="Let's Do This!"
@@ -116,8 +116,8 @@ class Services extends Component {
               horizontalMargin={Margins.mobile.horizontal}
               verticalMargin={Margins.mobile.vertical}
               buttonHeight='48px'
-              inactiveButtonWidth='288px'
-              inactiveButtonText="Who We've Worked With"
+              inactiveButtonWidth='208px'
+              inactiveButtonText="Our Partners"
               inactiveButtonLink='/our-partners'
               accentButtonWidth='224px'
               accentButtonText="Let's Do This!"

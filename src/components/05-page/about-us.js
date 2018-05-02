@@ -68,8 +68,7 @@ class AboutUs extends Component {
         <SimpleTextPage
           header={page.header_text}
           content={content}
-          buttonWidth='224px'
-          contactButtonText='Get In Touch!'
+          contactButtonText="Let's Work Together"
           nextButtonText='What We Do'
           nextButtonLink='/services'
         />

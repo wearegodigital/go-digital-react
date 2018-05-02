@@ -47,7 +47,7 @@ class OurPartners extends Component {
                 inactiveButtonText={this.props.nextButtonText}
                 inactiveButtonLink={this.props.nextButtonLink}
                 accentButtonWidth='240px'
-                accentButtonText="Let's Do This!"
+                accentButtonText="Get In Touch!"
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -84,7 +84,7 @@ class OurPartners extends Component {
                 inactiveButtonText={this.props.nextButtonText}
                 inactiveButtonLink={this.props.nextButtonLink}
                 accentButtonWidth='240px'
-                accentButtonText="Let's Do This!"
+                accentButtonText="Get In Touch!"
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -120,7 +120,7 @@ class OurPartners extends Component {
               inactiveButtonText={this.props.nextButtonText}
               inactiveButtonLink={this.props.nextButtonLink}
               accentButtonWidth='192px'
-              accentButtonText="Let's Do This!"
+              accentButtonText="Get In Touch!"
               accentButtonLink='/contact-us'/>
         </MediaQuery>
       </div>

@@ -38,7 +38,7 @@ class SimpleTextPage extends Component {
             inactiveButtonWidth='240px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
-            accentButtonWidth='240px'
+            accentButtonWidth='272px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>
@@ -68,7 +68,7 @@ class SimpleTextPage extends Component {
             inactiveButtonWidth='240px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
-            accentButtonWidth='240px'
+            accentButtonWidth='272px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>
@@ -97,7 +97,7 @@ class SimpleTextPage extends Component {
             inactiveButtonWidth='192px'
             inactiveButtonText={this.props.nextButtonText}
             inactiveButtonLink={this.props.nextButtonLink}
-            accentButtonWidth='192px'
+            accentButtonWidth='256px'
             accentButtonText={this.props.contactButtonText}
             accentButtonLink='/contact-us'/>
         </MediaQuery>

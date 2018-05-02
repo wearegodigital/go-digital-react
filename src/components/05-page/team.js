@@ -46,8 +46,8 @@ class Team extends Component {
                 inactiveButtonWidth='240px'
                 inactiveButtonText='What We Do'
                 inactiveButtonLink='/services'
-                accentButtonWidth='240px'
-                accentButtonText='Get In Touch!'
+                accentButtonWidth='272px'
+                accentButtonText="Let's Work Together"
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -82,8 +82,8 @@ class Team extends Component {
                 inactiveButtonWidth='240px'
                 inactiveButtonText='What We Do'
                 inactiveButtonLink='/services'
-                accentButtonWidth='240px'
-                accentButtonText='Get In Touch!'
+                accentButtonWidth='272px'
+                accentButtonText="Let's Work Together"
                 accentButtonLink='/contact-us'/>
 
               <NavButtonGroup
@@ -117,8 +117,8 @@ class Team extends Component {
               inactiveButtonWidth='192px'
               inactiveButtonText='What We Do'
               inactiveButtonLink='/services'
-              accentButtonWidth='192px'
-              accentButtonText='Get In Touch!'
+              accentButtonWidth='256px'
+              accentButtonText="Let's Work Together"
               accentButtonLink='/contact-us'/>
         </MediaQuery>
       </div>

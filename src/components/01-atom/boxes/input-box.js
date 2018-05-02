@@ -35,7 +35,7 @@ render() {
     width: this.props.width,
     maxWidth: calculateMaxWidth,
     display: 'block',
-    overflow: 'scroll',
+    overflow: 'hidden',
   }
 
   const boxText = {

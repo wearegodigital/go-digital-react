@@ -28,8 +28,8 @@ class HomePage extends Component {
               inactiveButtonWidth='240px'
               inactiveButtonText='Who We Are'
               inactiveButtonLink='/about-us'
-              accentButtonWidth='272px'
-              accentButtonText='Lets Work Together'
+              accentButtonWidth='224px'
+              accentButtonText='Say Hello!'
               accentButtonLink='/contact-us'/>
           </MediaQuery>
 
@@ -50,8 +50,8 @@ class HomePage extends Component {
               inactiveButtonWidth='240px'
               inactiveButtonText='Who We Are'
               inactiveButtonLink='/about-us'
-              accentButtonWidth='272px'
-              accentButtonText='Lets Work Together'
+              accentButtonWidth='224px'
+              accentButtonText='Say Hello!'
               accentButtonLink='/contact-us'/>
           </MediaQuery>
 
@@ -70,8 +70,8 @@ class HomePage extends Component {
               inactiveButtonWidth='192px'
               inactiveButtonText='Who We Are'
               inactiveButtonLink='/about-us'
-              accentButtonWidth='240px'
-              accentButtonText='Lets Work Together'
+              accentButtonWidth='176px'
+              accentButtonText='Say Hello!'
               accentButtonLink='/contact-us'/>
           </MediaQuery>
         </div>
