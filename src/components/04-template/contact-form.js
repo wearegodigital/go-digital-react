@@ -18,7 +18,8 @@ class ContactUs extends Component {
             shadowMargin={this.props.shadowMargin}
             inputName="name"
             inputPlaceholder="Full Name"
-            inputType="text" />
+            inputType="text"
+            autocomplete="name"/>
 
           <InputBox
             maxWidth={this.props.maxInputWidth}
@@ -29,7 +30,8 @@ class ContactUs extends Component {
             shadowMargin={this.props.shadowMargin}
             inputName="email"
             inputPlaceholder="Email Address"
-            inputType="email" />
+            inputType="email"
+            autocomplete="email"/>
 
           <TextareaBox
             maxWidth={this.props.maxTAWidth}

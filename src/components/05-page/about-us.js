@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactHtmlParser from 'react-html-parser';
 import MediaQuery from 'react-responsive';
-import { Link } from 'react-router-dom'
 
 import SimpleTextPage from '../04-template/simple-text-page';
 import PlaceholderText from '../01-atom/placeholder/text';
 import InlineButton from '../01-atom/buttons/inline-button';
 import Breakpoints from "../00-style/breakpoints";
-import Colours from "../00-style/colours";
 
 import { fetchPage } from '../../actions';
 

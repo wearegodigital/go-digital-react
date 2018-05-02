@@ -46,7 +46,7 @@ render() {
     maxHeight: calculateMaxHeight,
     minHeight: this.props.minHeight,
     display: 'block',
-    overflow: 'scroll',
+    overflowY: 'auto',
   }
 
   const boxText = {

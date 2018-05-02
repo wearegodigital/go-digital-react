@@ -370,7 +370,7 @@ small, .font_small {font-size: 0.618em;}
   width: 100vw;
 }
 
-.card-container::-webkit-scrollbar {
+.card-container::-webkit-scrollbar, .text-content .input-placeholder-text::-webkit-scrollbar {
     display: none;
 }
 
@@ -399,4 +399,17 @@ small, .font_small {font-size: 0.618em;}
 .cms-content h4 {
   color: #B64F59;
   padding: 0.5em 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B64F59;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #B64F59;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #B64F59;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #B64F59;
 }

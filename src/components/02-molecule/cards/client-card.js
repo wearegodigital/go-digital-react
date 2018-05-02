@@ -200,7 +200,7 @@ class ClientCard extends Component {
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
-      overflow: 'scroll'
+      overflowY: 'auto'
     }
 
     const hoverText = {

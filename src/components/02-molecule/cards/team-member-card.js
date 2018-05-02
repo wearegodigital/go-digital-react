@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import MediaQuery from 'react-responsive';
 
-import Colours from '../../00-style/colours';
-import Breakpoints from '../../00-style/breakpoints';
-import Margins from '../../00-style/margins';
 import ImageBox from '../../01-atom/boxes/image-box';
 import TextBox from '../../01-atom/boxes/text-box';
 

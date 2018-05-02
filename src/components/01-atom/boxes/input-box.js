@@ -68,7 +68,7 @@ render() {
   return (
     <div className='text-container' style={boxContainer}>
       <div className='text-content' style={textDiv}>
-        <input style={boxText} name={this.props.inputName} placeholder={this.props.inputPlaceholder} type={this.props.inputType} className={`${this.props.inputName}-form-input input-placeholder-text secondaryColour`}/>
+        <input style={boxText} name={this.props.inputName} placeholder={this.props.inputPlaceholder} type={this.props.inputType} className={`${this.props.inputName}-form-input input-placeholder-text secondaryColour`} autoComplete={this.props.autocomplete}/>
       </div>
       <div className='text-shadow' style={hatchedShadow}>
       </div>
