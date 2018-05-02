@@ -189,7 +189,7 @@ class ServiceCard extends Component {
       width: this.props.width,
       maxWidth: this.props.maxWidth,
       display: 'block',
-      overflowY: 'scroll'
+      overflowY: 'auto'
     }
 
     const hoverText = {

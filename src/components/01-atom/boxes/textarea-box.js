@@ -37,12 +37,12 @@ render() {
     width: this.props.width,
     maxWidth: calculateMaxWidth,
     display: 'block',
-    overflow: 'scroll',
+    overflowY: 'auto',
+    overflowX: 'hidden',
   }
 
   const boxText = {
     padding: '16px',
-    overflow: 'auto',
     minHeight: this.props.minHeight,
     height: 'calc(100% - 36px)',
     width: `calc(${this.props.width} - 36px)`,

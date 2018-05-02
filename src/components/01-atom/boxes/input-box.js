@@ -40,7 +40,7 @@ render() {
 
   const boxText = {
     padding: '0 16px',
-    overflow: 'auto',
+    overflow: 'hidden',
     height: 'calc(100%)',
     width: 'calc(100% - 36px)',
     maxWidth: calculateMaxWidth,
