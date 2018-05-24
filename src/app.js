@@ -1,11 +1,12 @@
 import React from 'react';
-import { HashRouter, Route, Switch} from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import './style/style.css';
 
 import BackgroundAnimation from './components/01-atom/backgrounds/bg-animation';
+import CookiePopup from './components/01-atom/boxes/cookie-popup';
 
 import MobileNavBar from './components/02-molecule/navigation/mobile-navbar';
 import DesktopNavBar from './components/02-molecule/navigation/desktop-navbar';
@@ -45,6 +46,7 @@ class App extends React.Component {
           <main id="page-wrap">
             <div id="background-overlay">
               <BackgroundAnimation/>
+              <CookiePopup/>
               <div id="page-content">
                 <MediaQuery query="(max-width: 959px)">
                   <MobileNavBar/>
