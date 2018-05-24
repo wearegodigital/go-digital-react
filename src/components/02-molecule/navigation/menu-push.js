@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import { push as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import MenuItem from '../../01-atom/navigation/menu-item.js';
 
@@ -80,6 +81,12 @@ class MenuPush extends Component {
             <MenuItem href="/services" id="services" title="Services"/>
             <MenuItem href="/our-partners" id="our-partners" title="Our Partners"/>
             <MenuItem href="/contact-us" id="contact-us" title="Contact Us"/>
+
+            <Link
+              to="/privacy-policy"
+              id="privacy-policy">
+                Privacy Policy
+             </Link>
           </Menu>
         </MediaQuery>
       </div>

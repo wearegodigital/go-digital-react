@@ -51,33 +51,33 @@
 @media screen and (min-width: 960px) {
   @keyframes shape-1 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(350deg); }
+      transform: translate3d(0, 0, 0) rotate(294deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(710deg); } }
+      transform: translate3d(0, 0, 0) rotate(654deg); } }
   .shape-container--1 {
-    animation: shape-1 408s infinite linear;
+    animation: shape-1 404s infinite linear;
     position: absolute;
-    top: 48vh;
-    left: 45.5vw;
-    width: 103vw;
+    top: 2vh;
+    left: -23vw;
+    width: 90vw;
     height: auto; }
     .shape-container--1 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.8;
+      content: "B"; }
   @keyframes shape-2 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(248deg); }
+      transform: translate3d(0, 0, 0) rotate(207deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(608deg); } }
+      transform: translate3d(0, 0, 0) rotate(567deg); } }
   .shape-container--2 {
-    animation: shape-2 401s infinite linear;
+    animation: shape-2 404s infinite linear;
     position: absolute;
-    top: 29vh;
-    left: 35.5vw;
-    width: 109vw;
+    top: 36vh;
+    left: 10.5vw;
+    width: 59vw;
     height: auto; }
     .shape-container--2 .random-shape:after {
       margin: 5rem;
@@ -87,303 +87,303 @@
       content: "D"; }
   @keyframes shape-3 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(232deg); }
+      transform: translate3d(0, 0, 0) rotate(193deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(592deg); } }
+      transform: translate3d(0, 0, 0) rotate(553deg); } }
   .shape-container--3 {
-    animation: shape-3 406s infinite linear;
+    animation: shape-3 405s infinite linear;
     position: absolute;
-    top: 94vh;
-    left: 42vw;
-    width: 112vw;
+    top: 78vh;
+    left: -9vw;
+    width: 56vw;
     height: auto; }
     .shape-container--3 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "C"; }
+      opacity: 0.9;
+      content: "A"; }
   @keyframes shape-4 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(324deg); }
+      transform: translate3d(0, 0, 0) rotate(95deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(684deg); } }
+      transform: translate3d(0, 0, 0) rotate(455deg); } }
   .shape-container--4 {
-    animation: shape-4 410s infinite linear;
+    animation: shape-4 407s infinite linear;
     position: absolute;
-    top: 69vh;
-    left: 58.5vw;
-    width: 71vw;
+    top: 47vh;
+    left: 8.5vw;
+    width: 117vw;
     height: auto; }
     .shape-container--4 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "D"; }
+      opacity: 1;
+      content: "A"; }
   @keyframes shape-5 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(191deg); }
+      transform: translate3d(0, 0, 0) rotate(183deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(551deg); } }
+      transform: translate3d(0, 0, 0) rotate(543deg); } }
   .shape-container--5 {
-    animation: shape-5 404s infinite linear;
+    animation: shape-5 403s infinite linear;
     position: absolute;
-    top: 79vh;
-    left: 11.5vw;
-    width: 141vw;
+    top: 87vh;
+    left: -38vw;
+    width: 92vw;
     height: auto; }
     .shape-container--5 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "B"; }
+      opacity: 0.8;
+      content: "C"; }
   @keyframes shape-6 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(277deg); }
+      transform: translate3d(0, 0, 0) rotate(58deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(637deg); } }
+      transform: translate3d(0, 0, 0) rotate(418deg); } }
   .shape-container--6 {
-    animation: shape-6 409s infinite linear;
+    animation: shape-6 405s infinite linear;
     position: absolute;
-    top: 53vh;
-    left: 1.5vw;
-    width: 137vw;
+    top: 84vh;
+    left: -42.5vw;
+    width: 101vw;
     height: auto; }
     .shape-container--6 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
+      opacity: 0.7;
       content: "C"; }
   @keyframes shape-7 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(127deg); }
+      transform: translate3d(0, 0, 0) rotate(88deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(487deg); } }
+      transform: translate3d(0, 0, 0) rotate(448deg); } }
   .shape-container--7 {
-    animation: shape-7 401s infinite linear;
+    animation: shape-7 408s infinite linear;
     position: absolute;
-    top: 47vh;
-    left: 40.5vw;
-    width: 69vw;
+    top: 49vh;
+    left: 16.5vw;
+    width: 109vw;
     height: auto; }
     .shape-container--7 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-8 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(336deg); }
+      transform: translate3d(0, 0, 0) rotate(134deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(696deg); } }
+      transform: translate3d(0, 0, 0) rotate(494deg); } }
   .shape-container--8 {
     animation: shape-8 409s infinite linear;
     position: absolute;
-    top: 70vh;
-    left: -22.5vw;
-    width: 119vw;
+    top: 94vh;
+    left: 16.5vw;
+    width: 61vw;
     height: auto; }
     .shape-container--8 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
-      content: "A"; }
+      opacity: 0.7;
+      content: "C"; }
   @keyframes shape-9 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(187deg); }
+      transform: translate3d(0, 0, 0) rotate(73deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(547deg); } }
+      transform: translate3d(0, 0, 0) rotate(433deg); } }
   .shape-container--9 {
-    animation: shape-9 405s infinite linear;
+    animation: shape-9 408s infinite linear;
     position: absolute;
-    top: 72vh;
-    left: -19vw;
-    width: 84vw;
+    top: 82vh;
+    left: 7vw;
+    width: 102vw;
     height: auto; }
     .shape-container--9 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
       opacity: 1;
-      content: "D"; }
+      content: "B"; }
   @keyframes shape-10 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(268deg); }
+      transform: translate3d(0, 0, 0) rotate(347deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(628deg); } }
+      transform: translate3d(0, 0, 0) rotate(707deg); } }
   .shape-container--10 {
-    animation: shape-10 403s infinite linear;
+    animation: shape-10 406s infinite linear;
     position: absolute;
-    top: 61vh;
-    left: 23.5vw;
-    width: 111vw;
+    top: 63vh;
+    left: 19.5vw;
+    width: 67vw;
     height: auto; }
     .shape-container--10 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
       opacity: 0.6;
-      content: "A"; }
+      content: "D"; }
   @keyframes shape-11 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(106deg); }
+      transform: translate3d(0, 0, 0) rotate(262deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(466deg); } }
+      transform: translate3d(0, 0, 0) rotate(622deg); } }
   .shape-container--11 {
     animation: shape-11 409s infinite linear;
     position: absolute;
-    top: 48vh;
-    left: 50vw;
-    width: 94vw;
+    top: 59vh;
+    left: 18vw;
+    width: 78vw;
     height: auto; }
     .shape-container--11 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
-      content: "C"; }
+      opacity: 1;
+      content: "A"; }
   @keyframes shape-12 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(205deg); }
+      transform: translate3d(0, 0, 0) rotate(228deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(565deg); } }
+      transform: translate3d(0, 0, 0) rotate(588deg); } }
   .shape-container--12 {
-    animation: shape-12 410s infinite linear;
+    animation: shape-12 401s infinite linear;
     position: absolute;
-    top: 59vh;
-    left: 13vw;
-    width: 58vw;
+    top: 57vh;
+    left: 2.5vw;
+    width: 81vw;
     height: auto; }
     .shape-container--12 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
-      content: "C"; }
+      opacity: 0.7;
+      content: "A"; }
   @keyframes shape-13 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(10deg); }
+      transform: translate3d(0, 0, 0) rotate(304deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(370deg); } }
+      transform: translate3d(0, 0, 0) rotate(664deg); } }
   .shape-container--13 {
-    animation: shape-13 405s infinite linear;
+    animation: shape-13 404s infinite linear;
     position: absolute;
-    top: 30vh;
-    left: -3.5vw;
-    width: 113vw;
+    top: 89vh;
+    left: -31.5vw;
+    width: 135vw;
     height: auto; }
     .shape-container--13 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
+      opacity: 1;
       content: "C"; }
   @keyframes shape-14 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(20deg); }
+      transform: translate3d(0, 0, 0) rotate(99deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(380deg); } }
+      transform: translate3d(0, 0, 0) rotate(459deg); } }
   .shape-container--14 {
-    animation: shape-14 401s infinite linear;
+    animation: shape-14 403s infinite linear;
     position: absolute;
-    top: 65vh;
-    left: 42.5vw;
-    width: 109vw;
+    top: 98vh;
+    left: 49.5vw;
+    width: 67vw;
     height: auto; }
     .shape-container--14 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "C"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-15 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(262deg); }
+      transform: translate3d(0, 0, 0) rotate(45deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(622deg); } }
+      transform: translate3d(0, 0, 0) rotate(405deg); } }
   .shape-container--15 {
-    animation: shape-15 409s infinite linear;
+    animation: shape-15 402s infinite linear;
     position: absolute;
-    top: 41vh;
-    left: 45vw;
-    width: 82vw;
+    top: 69vh;
+    left: 42vw;
+    width: 84vw;
     height: auto; }
     .shape-container--15 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
-      content: "A"; }
+      opacity: 0.7;
+      content: "B"; }
   @keyframes shape-16 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(6deg); }
+      transform: translate3d(0, 0, 0) rotate(206deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(366deg); } }
+      transform: translate3d(0, 0, 0) rotate(566deg); } }
   .shape-container--16 {
-    animation: shape-16 403s infinite linear;
+    animation: shape-16 407s infinite linear;
     position: absolute;
-    top: 27vh;
-    left: -33.5vw;
-    width: 127vw;
+    top: 74vh;
+    left: 41.5vw;
+    width: 53vw;
     height: auto; }
     .shape-container--16 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "B"; }
+      opacity: 0.9;
+      content: "C"; }
   @keyframes shape-17 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(259deg); }
+      transform: translate3d(0, 0, 0) rotate(292deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(619deg); } }
+      transform: translate3d(0, 0, 0) rotate(652deg); } }
   .shape-container--17 {
-    animation: shape-17 401s infinite linear;
+    animation: shape-17 406s infinite linear;
     position: absolute;
-    top: 33vh;
-    left: 26vw;
-    width: 76vw;
+    top: 34vh;
+    left: 0vw;
+    width: 148vw;
     height: auto; }
     .shape-container--17 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
+      opacity: 0.7;
       content: "C"; }
   @keyframes shape-18 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(271deg); }
+      transform: translate3d(0, 0, 0) rotate(265deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(631deg); } }
+      transform: translate3d(0, 0, 0) rotate(625deg); } }
   .shape-container--18 {
     animation: shape-18 401s infinite linear;
     position: absolute;
-    top: 31vh;
-    left: -9vw;
-    width: 72vw;
+    top: 10vh;
+    left: -11vw;
+    width: 90vw;
     height: auto; }
     .shape-container--18 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
+      opacity: 0.9;
       content: "B"; }
   @keyframes shape-19 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(41deg); }
+      transform: translate3d(0, 0, 0) rotate(153deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(401deg); } }
+      transform: translate3d(0, 0, 0) rotate(513deg); } }
   .shape-container--19 {
-    animation: shape-19 403s infinite linear;
+    animation: shape-19 406s infinite linear;
     position: absolute;
-    top: 61vh;
-    left: 19.5vw;
-    width: 97vw;
+    top: 37vh;
+    left: -43.5vw;
+    width: 119vw;
     height: auto; }
     .shape-container--19 .random-shape:after {
       margin: 5rem;
@@ -393,195 +393,195 @@
       content: "B"; }
   @keyframes shape-20 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(284deg); }
+      transform: translate3d(0, 0, 0) rotate(44deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(644deg); } }
+      transform: translate3d(0, 0, 0) rotate(404deg); } }
   .shape-container--20 {
-    animation: shape-20 410s infinite linear;
+    animation: shape-20 409s infinite linear;
     position: absolute;
-    top: 20vh;
-    left: 23.5vw;
-    width: 55vw;
+    top: 50vh;
+    left: -28.5vw;
+    width: 89vw;
     height: auto; }
     .shape-container--20 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
+      opacity: 0.6;
       content: "C"; }
   @keyframes shape-21 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(42deg); }
+      transform: translate3d(0, 0, 0) rotate(41deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(402deg); } }
+      transform: translate3d(0, 0, 0) rotate(401deg); } }
   .shape-container--21 {
-    animation: shape-21 409s infinite linear;
+    animation: shape-21 405s infinite linear;
     position: absolute;
-    top: 63vh;
-    left: -41.5vw;
-    width: 91vw;
+    top: 29vh;
+    left: -39vw;
+    width: 98vw;
     height: auto; }
     .shape-container--21 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 1;
+      content: "B"; }
   @keyframes shape-22 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(46deg); }
+      transform: translate3d(0, 0, 0) rotate(29deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(406deg); } }
+      transform: translate3d(0, 0, 0) rotate(389deg); } }
   .shape-container--22 {
-    animation: shape-22 407s infinite linear;
+    animation: shape-22 405s infinite linear;
     position: absolute;
-    top: 7vh;
-    left: -22vw;
-    width: 118vw;
+    top: 81vh;
+    left: -49.5vw;
+    width: 103vw;
     height: auto; }
     .shape-container--22 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
       opacity: 0.6;
-      content: "B"; }
+      content: "C"; }
   @keyframes shape-23 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(113deg); }
+      transform: translate3d(0, 0, 0) rotate(344deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(473deg); } }
+      transform: translate3d(0, 0, 0) rotate(704deg); } }
   .shape-container--23 {
-    animation: shape-23 404s infinite linear;
+    animation: shape-23 401s infinite linear;
     position: absolute;
-    top: 30vh;
-    left: 13vw;
-    width: 56vw;
+    top: 36vh;
+    left: 36.5vw;
+    width: 99vw;
     height: auto; }
     .shape-container--23 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "D"; }
+      opacity: 0.9;
+      content: "B"; }
   @keyframes shape-24 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(57deg); }
+      transform: translate3d(0, 0, 0) rotate(326deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(417deg); } }
+      transform: translate3d(0, 0, 0) rotate(686deg); } }
   .shape-container--24 {
-    animation: shape-24 409s infinite linear;
+    animation: shape-24 405s infinite linear;
     position: absolute;
-    top: 78vh;
-    left: -51.5vw;
-    width: 125vw;
+    top: 84vh;
+    left: 34.5vw;
+    width: 57vw;
     height: auto; }
     .shape-container--24 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
+      opacity: 0.9;
       content: "C"; }
   @keyframes shape-25 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(324deg); }
+      transform: translate3d(0, 0, 0) rotate(127deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(684deg); } }
+      transform: translate3d(0, 0, 0) rotate(487deg); } }
   .shape-container--25 {
-    animation: shape-25 403s infinite linear;
+    animation: shape-25 409s infinite linear;
     position: absolute;
-    top: 14vh;
-    left: 72vw;
-    width: 54vw;
+    top: 5vh;
+    left: -66vw;
+    width: 136vw;
     height: auto; }
     .shape-container--25 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.6;
+      content: "A"; }
   @keyframes shape-26 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(250deg); }
+      transform: translate3d(0, 0, 0) rotate(103deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(610deg); } }
+      transform: translate3d(0, 0, 0) rotate(463deg); } }
   .shape-container--26 {
-    animation: shape-26 401s infinite linear;
+    animation: shape-26 407s infinite linear;
     position: absolute;
-    top: 89vh;
-    left: 8vw;
-    width: 86vw;
+    top: 53vh;
+    left: 36.5vw;
+    width: 121vw;
     height: auto; }
     .shape-container--26 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "A"; }
+      opacity: 0.9;
+      content: "B"; }
   @keyframes shape-27 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(151deg); }
+      transform: translate3d(0, 0, 0) rotate(228deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(511deg); } }
+      transform: translate3d(0, 0, 0) rotate(588deg); } }
   .shape-container--27 {
-    animation: shape-27 403s infinite linear;
+    animation: shape-27 404s infinite linear;
     position: absolute;
-    top: 54vh;
-    left: -4.5vw;
-    width: 141vw;
+    top: 76vh;
+    left: -14vw;
+    width: 148vw;
     height: auto; }
     .shape-container--27 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
+      opacity: 0.9;
       content: "A"; }
   @keyframes shape-28 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(169deg); }
+      transform: translate3d(0, 0, 0) rotate(327deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(529deg); } }
+      transform: translate3d(0, 0, 0) rotate(687deg); } }
   .shape-container--28 {
-    animation: shape-28 404s infinite linear;
+    animation: shape-28 408s infinite linear;
     position: absolute;
-    top: 92vh;
-    left: -44vw;
-    width: 136vw;
+    top: 57vh;
+    left: 48.5vw;
+    width: 103vw;
     height: auto; }
     .shape-container--28 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
-      content: "D"; }
+      opacity: 0.9;
+      content: "C"; }
   @keyframes shape-29 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(174deg); }
+      transform: translate3d(0, 0, 0) rotate(31deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(534deg); } }
+      transform: translate3d(0, 0, 0) rotate(391deg); } }
   .shape-container--29 {
-    animation: shape-29 408s infinite linear;
+    animation: shape-29 410s infinite linear;
     position: absolute;
-    top: 15vh;
-    left: -14vw;
-    width: 118vw;
+    top: 92vh;
+    left: 60.5vw;
+    width: 53vw;
     height: auto; }
     .shape-container--29 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
-      content: "B"; }
+      opacity: 0.6;
+      content: "D"; }
   @keyframes shape-30 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(255deg); }
+      transform: translate3d(0, 0, 0) rotate(227deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(615deg); } }
+      transform: translate3d(0, 0, 0) rotate(587deg); } }
   .shape-container--30 {
-    animation: shape-30 405s infinite linear;
+    animation: shape-30 409s infinite linear;
     position: absolute;
-    top: 16vh;
-    left: -6.5vw;
-    width: 59vw;
+    top: 58vh;
+    left: 34vw;
+    width: 52vw;
     height: auto; }
     .shape-container--30 .random-shape:after {
       margin: 5rem;
@@ -591,339 +591,339 @@
       content: "D"; }
   @keyframes shape-31 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(167deg); }
+      transform: translate3d(0, 0, 0) rotate(234deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(527deg); } }
+      transform: translate3d(0, 0, 0) rotate(594deg); } }
   .shape-container--31 {
     animation: shape-31 402s infinite linear;
     position: absolute;
-    top: 82vh;
-    left: -19vw;
-    width: 62vw;
+    top: 59vh;
+    left: 37vw;
+    width: 60vw;
     height: auto; }
     .shape-container--31 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
+      opacity: 1;
       content: "B"; }
   @keyframes shape-32 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(117deg); }
+      transform: translate3d(0, 0, 0) rotate(99deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(477deg); } }
+      transform: translate3d(0, 0, 0) rotate(459deg); } }
   .shape-container--32 {
     animation: shape-32 407s infinite linear;
     position: absolute;
-    top: 22vh;
-    left: -53vw;
-    width: 122vw;
+    top: 100vh;
+    left: -57vw;
+    width: 142vw;
     height: auto; }
     .shape-container--32 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "A"; }
+      opacity: 1;
+      content: "C"; }
   @keyframes shape-33 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(190deg); }
+      transform: translate3d(0, 0, 0) rotate(224deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(550deg); } }
+      transform: translate3d(0, 0, 0) rotate(584deg); } }
   .shape-container--33 {
-    animation: shape-33 403s infinite linear;
+    animation: shape-33 406s infinite linear;
     position: absolute;
-    top: 76vh;
-    left: -15.5vw;
-    width: 99vw;
+    top: 97vh;
+    left: -20.5vw;
+    width: 53vw;
     height: auto; }
     .shape-container--33 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
-      content: "D"; }
+      opacity: 0.6;
+      content: "A"; }
   @keyframes shape-34 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(247deg); }
+      transform: translate3d(0, 0, 0) rotate(276deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(607deg); } }
+      transform: translate3d(0, 0, 0) rotate(636deg); } }
   .shape-container--34 {
-    animation: shape-34 406s infinite linear;
+    animation: shape-34 409s infinite linear;
     position: absolute;
-    top: 1vh;
-    left: 11.5vw;
-    width: 147vw;
+    top: 10vh;
+    left: 33.5vw;
+    width: 85vw;
     height: auto; }
     .shape-container--34 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
-      content: "D"; }
+      opacity: 0.8;
+      content: "B"; }
   @keyframes shape-35 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(236deg); }
+      transform: translate3d(0, 0, 0) rotate(242deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(596deg); } }
+      transform: translate3d(0, 0, 0) rotate(602deg); } }
   .shape-container--35 {
-    animation: shape-35 406s infinite linear;
+    animation: shape-35 401s infinite linear;
     position: absolute;
-    top: 8vh;
-    left: 27vw;
-    width: 96vw;
+    top: 39vh;
+    left: 2.5vw;
+    width: 135vw;
     height: auto; }
     .shape-container--35 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
+      opacity: 0.8;
       content: "D"; }
   @keyframes shape-36 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(222deg); }
+      transform: translate3d(0, 0, 0) rotate(342deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(582deg); } }
+      transform: translate3d(0, 0, 0) rotate(702deg); } }
   .shape-container--36 {
-    animation: shape-36 401s infinite linear;
+    animation: shape-36 407s infinite linear;
     position: absolute;
-    top: 8vh;
-    left: 4vw;
-    width: 140vw;
+    top: 24vh;
+    left: -25vw;
+    width: 58vw;
     height: auto; }
     .shape-container--36 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
+      opacity: 0.9;
       content: "C"; }
   @keyframes shape-37 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(121deg); }
+      transform: translate3d(0, 0, 0) rotate(155deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(481deg); } }
+      transform: translate3d(0, 0, 0) rotate(515deg); } }
   .shape-container--37 {
-    animation: shape-37 402s infinite linear;
+    animation: shape-37 408s infinite linear;
     position: absolute;
-    top: 28vh;
-    left: -18vw;
-    width: 74vw;
+    top: 9vh;
+    left: 30.5vw;
+    width: 57vw;
     height: auto; }
     .shape-container--37 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "B"; }
+      opacity: 0.7;
+      content: "D"; }
   @keyframes shape-38 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(327deg); }
+      transform: translate3d(0, 0, 0) rotate(98deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(687deg); } }
+      transform: translate3d(0, 0, 0) rotate(458deg); } }
   .shape-container--38 {
-    animation: shape-38 402s infinite linear;
+    animation: shape-38 406s infinite linear;
     position: absolute;
-    top: 58vh;
-    left: 29vw;
-    width: 90vw;
+    top: 49vh;
+    left: 46vw;
+    width: 74vw;
     height: auto; }
     .shape-container--38 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
+      opacity: 1;
       content: "D"; }
   @keyframes shape-39 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(285deg); }
+      transform: translate3d(0, 0, 0) rotate(209deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(645deg); } }
+      transform: translate3d(0, 0, 0) rotate(569deg); } }
   .shape-container--39 {
-    animation: shape-39 405s infinite linear;
+    animation: shape-39 408s infinite linear;
     position: absolute;
-    top: 97vh;
-    left: 26vw;
-    width: 90vw;
+    top: 87vh;
+    left: -55.5vw;
+    width: 137vw;
     height: auto; }
     .shape-container--39 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.8;
-      content: "C"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-40 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(140deg); }
+      transform: translate3d(0, 0, 0) rotate(267deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(500deg); } }
+      transform: translate3d(0, 0, 0) rotate(627deg); } }
   .shape-container--40 {
-    animation: shape-40 401s infinite linear;
+    animation: shape-40 410s infinite linear;
     position: absolute;
-    top: 84vh;
-    left: 0.5vw;
-    width: 61vw;
+    top: 30vh;
+    left: 52.5vw;
+    width: 93vw;
     height: auto; }
     .shape-container--40 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "A"; }
+      opacity: 0.8;
+      content: "D"; }
   @keyframes shape-41 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(1deg); }
+      transform: translate3d(0, 0, 0) rotate(306deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(361deg); } }
+      transform: translate3d(0, 0, 0) rotate(666deg); } }
   .shape-container--41 {
-    animation: shape-41 407s infinite linear;
+    animation: shape-41 410s infinite linear;
     position: absolute;
-    top: 95vh;
-    left: 53vw;
-    width: 86vw;
+    top: 96vh;
+    left: -14vw;
+    width: 62vw;
     height: auto; }
     .shape-container--41 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.9;
+      opacity: 0.7;
       content: "C"; }
   @keyframes shape-42 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(143deg); }
+      transform: translate3d(0, 0, 0) rotate(159deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(503deg); } }
+      transform: translate3d(0, 0, 0) rotate(519deg); } }
   .shape-container--42 {
-    animation: shape-42 406s infinite linear;
+    animation: shape-42 402s infinite linear;
     position: absolute;
-    top: 75vh;
-    left: 52vw;
-    width: 78vw;
+    top: 55vh;
+    left: 6vw;
+    width: 116vw;
     height: auto; }
     .shape-container--42 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
+      opacity: 1;
       content: "D"; }
   @keyframes shape-43 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(260deg); }
+      transform: translate3d(0, 0, 0) rotate(218deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(620deg); } }
+      transform: translate3d(0, 0, 0) rotate(578deg); } }
   .shape-container--43 {
-    animation: shape-43 404s infinite linear;
+    animation: shape-43 407s infinite linear;
     position: absolute;
-    top: 71vh;
-    left: 11.5vw;
-    width: 125vw;
+    top: 60vh;
+    left: -22vw;
+    width: 88vw;
     height: auto; }
     .shape-container--43 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
-      content: "A"; }
+      opacity: 0.6;
+      content: "D"; }
   @keyframes shape-44 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(305deg); }
+      transform: translate3d(0, 0, 0) rotate(302deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(665deg); } }
+      transform: translate3d(0, 0, 0) rotate(662deg); } }
   .shape-container--44 {
-    animation: shape-44 402s infinite linear;
+    animation: shape-44 405s infinite linear;
     position: absolute;
-    top: 26vh;
-    left: -42.5vw;
-    width: 87vw;
+    top: 56vh;
+    left: 31vw;
+    width: 84vw;
     height: auto; }
     .shape-container--44 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.6;
-      content: "A"; }
+      opacity: 0.7;
+      content: "D"; }
   @keyframes shape-45 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(143deg); }
+      transform: translate3d(0, 0, 0) rotate(313deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(503deg); } }
+      transform: translate3d(0, 0, 0) rotate(673deg); } }
   .shape-container--45 {
-    animation: shape-45 409s infinite linear;
+    animation: shape-45 408s infinite linear;
     position: absolute;
-    top: 43vh;
-    left: -7.5vw;
-    width: 135vw;
+    top: 51vh;
+    left: -22.5vw;
+    width: 81vw;
     height: auto; }
     .shape-container--45 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "C"; }
+      opacity: 0.6;
+      content: "D"; }
   @keyframes shape-46 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(255deg); }
+      transform: translate3d(0, 0, 0) rotate(233deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(615deg); } }
+      transform: translate3d(0, 0, 0) rotate(593deg); } }
   .shape-container--46 {
-    animation: shape-46 408s infinite linear;
+    animation: shape-46 407s infinite linear;
     position: absolute;
-    top: 28vh;
-    left: 5.5vw;
-    width: 131vw;
+    top: 32vh;
+    left: 16.5vw;
+    width: 69vw;
     height: auto; }
     .shape-container--46 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 1;
+      opacity: 0.8;
       content: "A"; }
   @keyframes shape-47 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(68deg); }
+      transform: translate3d(0, 0, 0) rotate(253deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(428deg); } }
+      transform: translate3d(0, 0, 0) rotate(613deg); } }
   .shape-container--47 {
-    animation: shape-47 405s infinite linear;
+    animation: shape-47 401s infinite linear;
     position: absolute;
-    top: 93vh;
-    left: 22vw;
-    width: 146vw;
+    top: 38vh;
+    left: 9vw;
+    width: 80vw;
     height: auto; }
     .shape-container--47 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
       opacity: 1;
-      content: "C"; }
+      content: "A"; }
   @keyframes shape-48 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(341deg); }
+      transform: translate3d(0, 0, 0) rotate(216deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(701deg); } }
+      transform: translate3d(0, 0, 0) rotate(576deg); } }
   .shape-container--48 {
-    animation: shape-48 409s infinite linear;
+    animation: shape-48 410s infinite linear;
     position: absolute;
-    top: 62vh;
-    left: 55vw;
-    width: 84vw;
+    top: 60vh;
+    left: 9vw;
+    width: 78vw;
     height: auto; }
     .shape-container--48 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "C"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-49 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(157deg); }
+      transform: translate3d(0, 0, 0) rotate(245deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(517deg); } }
+      transform: translate3d(0, 0, 0) rotate(605deg); } }
   .shape-container--49 {
     animation: shape-49 406s infinite linear;
     position: absolute;
-    top: 76vh;
-    left: 5.5vw;
-    width: 127vw;
+    top: 24vh;
+    left: 18.5vw;
+    width: 125vw;
     height: auto; }
     .shape-container--49 .random-shape:after {
       margin: 5rem;
@@ -933,179 +933,179 @@
       content: "D"; }
   @keyframes shape-50 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(167deg); }
+      transform: translate3d(0, 0, 0) rotate(47deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(527deg); } }
+      transform: translate3d(0, 0, 0) rotate(407deg); } }
   .shape-container--50 {
     animation: shape-50 405s infinite linear;
     position: absolute;
-    top: 22vh;
-    left: 29.5vw;
-    width: 103vw;
+    top: 25vh;
+    left: -34.5vw;
+    width: 97vw;
     height: auto; }
     .shape-container--50 .random-shape:after {
       margin: 5rem;
       color: #B64F59;
       font-size: 5rem;
-      opacity: 0.7;
-      content: "A"; } }
+      opacity: 0.8;
+      content: "C"; } }
 
 @media screen and (min-width: 540px) and (max-width: 959px) {
   @keyframes shape-1 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(177deg); }
+      transform: translate3d(0, 0, 0) rotate(56deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(537deg); } }
+      transform: translate3d(0, 0, 0) rotate(416deg); } }
   .shape-container--1 {
-    animation: shape-1 409s infinite linear;
+    animation: shape-1 404s infinite linear;
     position: absolute;
-    top: 81vh;
-    left: 64vw;
-    width: 66vw;
+    top: 55vh;
+    left: -24vw;
+    width: 148vw;
     height: auto; }
     .shape-container--1 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
-      content: "B"; }
+      opacity: 0.8;
+      content: "D"; }
   @keyframes shape-2 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(178deg); }
+      transform: translate3d(0, 0, 0) rotate(177deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(538deg); } }
+      transform: translate3d(0, 0, 0) rotate(537deg); } }
   .shape-container--2 {
     animation: shape-2 404s infinite linear;
     position: absolute;
-    top: 17vh;
-    left: 12vw;
-    width: 62vw;
+    top: 56vh;
+    left: 50vw;
+    width: 70vw;
     height: auto; }
     .shape-container--2 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
+      opacity: 0.9;
       content: "B"; }
   @keyframes shape-3 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(22deg); }
+      transform: translate3d(0, 0, 0) rotate(261deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(382deg); } }
+      transform: translate3d(0, 0, 0) rotate(621deg); } }
   .shape-container--3 {
-    animation: shape-3 406s infinite linear;
+    animation: shape-3 410s infinite linear;
     position: absolute;
-    top: 30vh;
-    left: 43vw;
-    width: 84vw;
+    top: 46vh;
+    left: 12.5vw;
+    width: 123vw;
     height: auto; }
     .shape-container--3 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 0.8;
-      content: "A"; }
+      content: "D"; }
   @keyframes shape-4 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(119deg); }
+      transform: translate3d(0, 0, 0) rotate(349deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(479deg); } }
+      transform: translate3d(0, 0, 0) rotate(709deg); } }
   .shape-container--4 {
-    animation: shape-4 401s infinite linear;
+    animation: shape-4 405s infinite linear;
     position: absolute;
-    top: 73vh;
-    left: -23.5vw;
-    width: 127vw;
+    top: 33vh;
+    left: 5vw;
+    width: 92vw;
     height: auto; }
     .shape-container--4 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "A"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-5 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(165deg); }
+      transform: translate3d(0, 0, 0) rotate(318deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(525deg); } }
+      transform: translate3d(0, 0, 0) rotate(678deg); } }
   .shape-container--5 {
-    animation: shape-5 406s infinite linear;
+    animation: shape-5 408s infinite linear;
     position: absolute;
-    top: 79vh;
-    left: -36vw;
-    width: 84vw;
+    top: 82vh;
+    left: -8vw;
+    width: 138vw;
     height: auto; }
     .shape-container--5 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 0.6;
+      content: "C"; }
   @keyframes shape-6 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(288deg); }
+      transform: translate3d(0, 0, 0) rotate(205deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(648deg); } }
+      transform: translate3d(0, 0, 0) rotate(565deg); } }
   .shape-container--6 {
-    animation: shape-6 408s infinite linear;
+    animation: shape-6 405s infinite linear;
     position: absolute;
-    top: 32vh;
-    left: -21vw;
-    width: 82vw;
+    top: 19vh;
+    left: -61.5vw;
+    width: 129vw;
     height: auto; }
     .shape-container--6 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "A"; }
+      opacity: 0.7;
+      content: "D"; }
   @keyframes shape-7 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(250deg); }
+      transform: translate3d(0, 0, 0) rotate(268deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(610deg); } }
+      transform: translate3d(0, 0, 0) rotate(628deg); } }
   .shape-container--7 {
-    animation: shape-7 407s infinite linear;
+    animation: shape-7 405s infinite linear;
     position: absolute;
-    top: 42vh;
-    left: 19.5vw;
-    width: 109vw;
+    top: 91vh;
+    left: 40vw;
+    width: 84vw;
     height: auto; }
     .shape-container--7 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "B"; }
+      opacity: 0.8;
+      content: "C"; }
   @keyframes shape-8 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(348deg); }
+      transform: translate3d(0, 0, 0) rotate(326deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(708deg); } }
+      transform: translate3d(0, 0, 0) rotate(686deg); } }
   .shape-container--8 {
-    animation: shape-8 404s infinite linear;
+    animation: shape-8 403s infinite linear;
     position: absolute;
-    top: 73vh;
-    left: -32vw;
-    width: 92vw;
+    top: 54vh;
+    left: 56.5vw;
+    width: 59vw;
     height: auto; }
     .shape-container--8 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 0.9;
-      content: "D"; }
+      content: "C"; }
   @keyframes shape-9 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(267deg); }
+      transform: translate3d(0, 0, 0) rotate(199deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(627deg); } }
+      transform: translate3d(0, 0, 0) rotate(559deg); } }
   .shape-container--9 {
-    animation: shape-9 403s infinite linear;
+    animation: shape-9 410s infinite linear;
     position: absolute;
-    top: 24vh;
-    left: -47vw;
-    width: 104vw;
+    top: 75vh;
+    left: -6vw;
+    width: 106vw;
     height: auto; }
     .shape-container--9 .random-shape:after {
       margin: 4rem;
@@ -1115,562 +1115,562 @@
       content: "C"; }
   @keyframes shape-10 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(84deg); }
+      transform: translate3d(0, 0, 0) rotate(223deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(444deg); } }
+      transform: translate3d(0, 0, 0) rotate(583deg); } }
   .shape-container--10 {
-    animation: shape-10 404s infinite linear;
+    animation: shape-10 407s infinite linear;
     position: absolute;
-    top: 64vh;
-    left: -5.5vw;
-    width: 99vw;
+    top: 54vh;
+    left: 5vw;
+    width: 92vw;
     height: auto; }
     .shape-container--10 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
-      content: "A"; }
+      opacity: 1;
+      content: "B"; }
   @keyframes shape-11 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(255deg); }
+      transform: translate3d(0, 0, 0) rotate(308deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(615deg); } }
+      transform: translate3d(0, 0, 0) rotate(668deg); } }
   .shape-container--11 {
-    animation: shape-11 402s infinite linear;
+    animation: shape-11 407s infinite linear;
     position: absolute;
-    top: 46vh;
-    left: -30.5vw;
-    width: 87vw;
+    top: 47vh;
+    left: 15vw;
+    width: 98vw;
     height: auto; }
     .shape-container--11 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.7;
+      opacity: 0.9;
       content: "A"; }
   @keyframes shape-12 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(32deg); }
+      transform: translate3d(0, 0, 0) rotate(263deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(392deg); } }
+      transform: translate3d(0, 0, 0) rotate(623deg); } }
   .shape-container--12 {
-    animation: shape-12 407s infinite linear;
+    animation: shape-12 402s infinite linear;
     position: absolute;
-    top: 34vh;
-    left: 36.5vw;
-    width: 103vw;
+    top: 15vh;
+    left: -32.5vw;
+    width: 99vw;
     height: auto; }
     .shape-container--12 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 0.7;
+      content: "C"; }
   @keyframes shape-13 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(43deg); }
+      transform: translate3d(0, 0, 0) rotate(136deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(403deg); } }
+      transform: translate3d(0, 0, 0) rotate(496deg); } }
   .shape-container--13 {
-    animation: shape-13 401s infinite linear;
+    animation: shape-13 408s infinite linear;
     position: absolute;
-    top: 25vh;
-    left: -46.5vw;
-    width: 99vw;
+    top: 59vh;
+    left: 3vw;
+    width: 108vw;
     height: auto; }
     .shape-container--13 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.8;
+      content: "B"; }
   @keyframes shape-14 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(286deg); }
+      transform: translate3d(0, 0, 0) rotate(202deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(646deg); } }
+      transform: translate3d(0, 0, 0) rotate(562deg); } }
   .shape-container--14 {
     animation: shape-14 404s infinite linear;
     position: absolute;
-    top: 53vh;
-    left: -1.5vw;
-    width: 123vw;
+    top: 91vh;
+    left: 42.5vw;
+    width: 71vw;
     height: auto; }
     .shape-container--14 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "B"; }
+      opacity: 0.6;
+      content: "D"; }
   @keyframes shape-15 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(56deg); }
+      transform: translate3d(0, 0, 0) rotate(103deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(416deg); } }
+      transform: translate3d(0, 0, 0) rotate(463deg); } }
   .shape-container--15 {
-    animation: shape-15 408s infinite linear;
+    animation: shape-15 410s infinite linear;
     position: absolute;
-    top: 60vh;
-    left: -3vw;
-    width: 56vw;
+    top: 38vh;
+    left: 20.5vw;
+    width: 65vw;
     height: auto; }
     .shape-container--15 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
-      content: "A"; }
+      opacity: 1;
+      content: "B"; }
   @keyframes shape-16 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(67deg); }
+      transform: translate3d(0, 0, 0) rotate(277deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(427deg); } }
+      transform: translate3d(0, 0, 0) rotate(637deg); } }
   .shape-container--16 {
-    animation: shape-16 404s infinite linear;
+    animation: shape-16 401s infinite linear;
     position: absolute;
-    top: 81vh;
-    left: 6.5vw;
-    width: 145vw;
+    top: 92vh;
+    left: -2vw;
+    width: 130vw;
     height: auto; }
     .shape-container--16 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-17 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(1deg); }
+      transform: translate3d(0, 0, 0) rotate(20deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(361deg); } }
+      transform: translate3d(0, 0, 0) rotate(380deg); } }
   .shape-container--17 {
-    animation: shape-17 405s infinite linear;
+    animation: shape-17 406s infinite linear;
     position: absolute;
-    top: 97vh;
-    left: -15vw;
-    width: 116vw;
+    top: 55vh;
+    left: 13.5vw;
+    width: 103vw;
     height: auto; }
     .shape-container--17 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "B"; }
+      opacity: 0.9;
+      content: "C"; }
   @keyframes shape-18 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(189deg); }
+      transform: translate3d(0, 0, 0) rotate(354deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(549deg); } }
+      transform: translate3d(0, 0, 0) rotate(714deg); } }
   .shape-container--18 {
-    animation: shape-18 406s infinite linear;
+    animation: shape-18 408s infinite linear;
     position: absolute;
-    top: 62vh;
-    left: -34vw;
-    width: 132vw;
+    top: 65vh;
+    left: -3vw;
+    width: 150vw;
     height: auto; }
     .shape-container--18 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
+      opacity: 0.8;
       content: "D"; }
   @keyframes shape-19 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(100deg); }
+      transform: translate3d(0, 0, 0) rotate(294deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(460deg); } }
+      transform: translate3d(0, 0, 0) rotate(654deg); } }
   .shape-container--19 {
-    animation: shape-19 410s infinite linear;
+    animation: shape-19 403s infinite linear;
     position: absolute;
-    top: 11vh;
-    left: -48.5vw;
-    width: 111vw;
+    top: 79vh;
+    left: 35.5vw;
+    width: 99vw;
     height: auto; }
     .shape-container--19 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 0.7;
+      content: "B"; }
   @keyframes shape-20 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(187deg); }
+      transform: translate3d(0, 0, 0) rotate(265deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(547deg); } }
+      transform: translate3d(0, 0, 0) rotate(625deg); } }
   .shape-container--20 {
-    animation: shape-20 407s infinite linear;
+    animation: shape-20 408s infinite linear;
     position: absolute;
-    top: 32vh;
-    left: 38vw;
-    width: 52vw;
+    top: 40vh;
+    left: 28.5vw;
+    width: 133vw;
     height: auto; }
     .shape-container--20 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "C"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-21 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(190deg); }
+      transform: translate3d(0, 0, 0) rotate(128deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(550deg); } }
+      transform: translate3d(0, 0, 0) rotate(488deg); } }
   .shape-container--21 {
-    animation: shape-21 408s infinite linear;
+    animation: shape-21 403s infinite linear;
     position: absolute;
-    top: 4vh;
-    left: 2vw;
-    width: 54vw;
+    top: 12vh;
+    left: 36vw;
+    width: 52vw;
     height: auto; }
     .shape-container--21 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "D"; }
+      opacity: 0.6;
+      content: "A"; }
   @keyframes shape-22 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(74deg); }
+      transform: translate3d(0, 0, 0) rotate(264deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(434deg); } }
+      transform: translate3d(0, 0, 0) rotate(624deg); } }
   .shape-container--22 {
-    animation: shape-22 405s infinite linear;
+    animation: shape-22 406s infinite linear;
     position: absolute;
-    top: 25vh;
-    left: -25.5vw;
-    width: 121vw;
+    top: 85vh;
+    left: 21vw;
+    width: 146vw;
     height: auto; }
     .shape-container--22 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 0.8;
-      content: "D"; }
+      content: "A"; }
   @keyframes shape-23 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(4deg); }
+      transform: translate3d(0, 0, 0) rotate(106deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(364deg); } }
+      transform: translate3d(0, 0, 0) rotate(466deg); } }
   .shape-container--23 {
-    animation: shape-23 406s infinite linear;
+    animation: shape-23 409s infinite linear;
     position: absolute;
-    top: 20vh;
-    left: -46.5vw;
-    width: 113vw;
+    top: 4vh;
+    left: 29vw;
+    width: 132vw;
     height: auto; }
     .shape-container--23 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "B"; }
+      opacity: 0.7;
+      content: "C"; }
   @keyframes shape-24 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(81deg); }
+      transform: translate3d(0, 0, 0) rotate(52deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(441deg); } }
+      transform: translate3d(0, 0, 0) rotate(412deg); } }
   .shape-container--24 {
-    animation: shape-24 402s infinite linear;
+    animation: shape-24 401s infinite linear;
     position: absolute;
-    top: 75vh;
-    left: 16vw;
-    width: 100vw;
+    top: 70vh;
+    left: 13.5vw;
+    width: 139vw;
     height: auto; }
     .shape-container--24 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.8;
+      opacity: 0.9;
       content: "A"; }
   @keyframes shape-25 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(300deg); }
+      transform: translate3d(0, 0, 0) rotate(93deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(660deg); } }
+      transform: translate3d(0, 0, 0) rotate(453deg); } }
   .shape-container--25 {
-    animation: shape-25 402s infinite linear;
+    animation: shape-25 410s infinite linear;
     position: absolute;
-    top: 89vh;
-    left: -36vw;
-    width: 82vw;
+    top: 21vh;
+    left: -0.5vw;
+    width: 131vw;
     height: auto; }
     .shape-container--25 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 0.9;
-      content: "B"; }
+      content: "C"; }
   @keyframes shape-26 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(68deg); }
+      transform: translate3d(0, 0, 0) rotate(83deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(428deg); } }
+      transform: translate3d(0, 0, 0) rotate(443deg); } }
   .shape-container--26 {
     animation: shape-26 407s infinite linear;
     position: absolute;
-    top: 21vh;
-    left: -14vw;
-    width: 72vw;
+    top: 56vh;
+    left: -18vw;
+    width: 84vw;
     height: auto; }
     .shape-container--26 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
-      content: "A"; }
+      opacity: 0.7;
+      content: "C"; }
   @keyframes shape-27 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(62deg); }
+      transform: translate3d(0, 0, 0) rotate(136deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(422deg); } }
+      transform: translate3d(0, 0, 0) rotate(496deg); } }
   .shape-container--27 {
-    animation: shape-27 405s infinite linear;
+    animation: shape-27 402s infinite linear;
     position: absolute;
-    top: 96vh;
-    left: -35vw;
-    width: 128vw;
+    top: 18vh;
+    left: 26.5vw;
+    width: 115vw;
     height: auto; }
     .shape-container--27 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
+      opacity: 1;
       content: "B"; }
   @keyframes shape-28 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(230deg); }
+      transform: translate3d(0, 0, 0) rotate(308deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(590deg); } }
+      transform: translate3d(0, 0, 0) rotate(668deg); } }
   .shape-container--28 {
-    animation: shape-28 405s infinite linear;
+    animation: shape-28 410s infinite linear;
     position: absolute;
-    top: 6vh;
-    left: 11.5vw;
-    width: 65vw;
+    top: 94vh;
+    left: 13.5vw;
+    width: 139vw;
     height: auto; }
     .shape-container--28 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
-      content: "A"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-29 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(162deg); }
+      transform: translate3d(0, 0, 0) rotate(157deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(522deg); } }
+      transform: translate3d(0, 0, 0) rotate(517deg); } }
   .shape-container--29 {
-    animation: shape-29 410s infinite linear;
+    animation: shape-29 409s infinite linear;
     position: absolute;
-    top: 20vh;
-    left: -20.5vw;
-    width: 143vw;
+    top: 30vh;
+    left: 27vw;
+    width: 122vw;
     height: auto; }
     .shape-container--29 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
-      content: "D"; }
+      opacity: 0.9;
+      content: "B"; }
   @keyframes shape-30 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(276deg); }
+      transform: translate3d(0, 0, 0) rotate(51deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(636deg); } }
+      transform: translate3d(0, 0, 0) rotate(411deg); } }
   .shape-container--30 {
-    animation: shape-30 401s infinite linear;
+    animation: shape-30 403s infinite linear;
     position: absolute;
-    top: 24vh;
-    left: -16.5vw;
-    width: 81vw;
+    top: 87vh;
+    left: -45vw;
+    width: 134vw;
     height: auto; }
     .shape-container--30 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 1;
-      content: "C"; }
+      content: "B"; }
   @keyframes shape-31 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(267deg); }
+      transform: translate3d(0, 0, 0) rotate(116deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(627deg); } }
+      transform: translate3d(0, 0, 0) rotate(476deg); } }
   .shape-container--31 {
-    animation: shape-31 406s infinite linear;
+    animation: shape-31 405s infinite linear;
     position: absolute;
-    top: 74vh;
-    left: -25.5vw;
-    width: 73vw;
+    top: 42vh;
+    left: 45vw;
+    width: 74vw;
     height: auto; }
     .shape-container--31 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.6;
+      opacity: 0.7;
       content: "B"; }
   @keyframes shape-32 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(141deg); }
+      transform: translate3d(0, 0, 0) rotate(103deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(501deg); } }
+      transform: translate3d(0, 0, 0) rotate(463deg); } }
   .shape-container--32 {
-    animation: shape-32 404s infinite linear;
+    animation: shape-32 407s infinite linear;
     position: absolute;
-    top: 57vh;
-    left: 4vw;
-    width: 118vw;
+    top: 35vh;
+    left: 61.5vw;
+    width: 51vw;
     height: auto; }
     .shape-container--32 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.7;
-      content: "D"; }
+      opacity: 0.8;
+      content: "A"; }
   @keyframes shape-33 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(127deg); }
+      transform: translate3d(0, 0, 0) rotate(304deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(487deg); } }
+      transform: translate3d(0, 0, 0) rotate(664deg); } }
   .shape-container--33 {
-    animation: shape-33 401s infinite linear;
+    animation: shape-33 407s infinite linear;
     position: absolute;
-    top: 51vh;
+    top: 35vh;
     left: -23.5vw;
-    width: 95vw;
+    width: 139vw;
     height: auto; }
     .shape-container--33 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "B"; }
+      opacity: 0.8;
+      content: "C"; }
   @keyframes shape-34 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(291deg); }
+      transform: translate3d(0, 0, 0) rotate(303deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(651deg); } }
+      transform: translate3d(0, 0, 0) rotate(663deg); } }
   .shape-container--34 {
-    animation: shape-34 403s infinite linear;
+    animation: shape-34 409s infinite linear;
     position: absolute;
-    top: 42vh;
-    left: 30vw;
-    width: 60vw;
+    top: 64vh;
+    left: 24vw;
+    width: 96vw;
     height: auto; }
     .shape-container--34 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "A"; }
+      opacity: 1;
+      content: "C"; }
   @keyframes shape-35 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(274deg); }
+      transform: translate3d(0, 0, 0) rotate(200deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(634deg); } }
+      transform: translate3d(0, 0, 0) rotate(560deg); } }
   .shape-container--35 {
-    animation: shape-35 403s infinite linear;
+    animation: shape-35 405s infinite linear;
     position: absolute;
-    top: 3vh;
-    left: 0vw;
-    width: 84vw;
+    top: 40vh;
+    left: -26.5vw;
+    width: 135vw;
     height: auto; }
     .shape-container--35 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
+      opacity: 0.9;
       content: "C"; }
   @keyframes shape-36 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(16deg); }
+      transform: translate3d(0, 0, 0) rotate(321deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(376deg); } }
+      transform: translate3d(0, 0, 0) rotate(681deg); } }
   .shape-container--36 {
-    animation: shape-36 402s infinite linear;
+    animation: shape-36 404s infinite linear;
     position: absolute;
-    top: 23vh;
-    left: -30.5vw;
-    width: 79vw;
+    top: 15vh;
+    left: -27vw;
+    width: 80vw;
     height: auto; }
     .shape-container--36 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
       opacity: 1;
-      content: "B"; }
+      content: "A"; }
   @keyframes shape-37 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(330deg); }
+      transform: translate3d(0, 0, 0) rotate(113deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(690deg); } }
+      transform: translate3d(0, 0, 0) rotate(473deg); } }
   .shape-container--37 {
-    animation: shape-37 410s infinite linear;
+    animation: shape-37 402s infinite linear;
     position: absolute;
-    top: 24vh;
-    left: -27vw;
-    width: 110vw;
+    top: 25vh;
+    left: 25.5vw;
+    width: 123vw;
     height: auto; }
     .shape-container--37 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.9;
-      content: "B"; }
+      opacity: 0.8;
+      content: "A"; }
   @keyframes shape-38 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(41deg); }
+      transform: translate3d(0, 0, 0) rotate(177deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(401deg); } }
+      transform: translate3d(0, 0, 0) rotate(537deg); } }
   .shape-container--38 {
     animation: shape-38 408s infinite linear;
     position: absolute;
-    top: 70vh;
-    left: -7.5vw;
-    width: 141vw;
+    top: 9vh;
+    left: 3vw;
+    width: 120vw;
     height: auto; }
     .shape-container--38 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
-      content: "B"; }
+      opacity: 0.8;
+      content: "D"; }
   @keyframes shape-39 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(11deg); }
+      transform: translate3d(0, 0, 0) rotate(124deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(371deg); } }
+      transform: translate3d(0, 0, 0) rotate(484deg); } }
   .shape-container--39 {
-    animation: shape-39 409s infinite linear;
+    animation: shape-39 407s infinite linear;
     position: absolute;
-    top: 71vh;
-    left: 44.5vw;
-    width: 65vw;
+    top: 43vh;
+    left: -8vw;
+    width: 62vw;
     height: auto; }
     .shape-container--39 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 0.7;
-      content: "C"; }
+      opacity: 1;
+      content: "B"; }
   @keyframes shape-40 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(42deg); }
+      transform: translate3d(0, 0, 0) rotate(17deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(402deg); } }
+      transform: translate3d(0, 0, 0) rotate(377deg); } }
   .shape-container--40 {
-    animation: shape-40 407s infinite linear;
+    animation: shape-40 410s infinite linear;
     position: absolute;
-    top: 12vh;
-    left: 35.5vw;
-    width: 75vw;
+    top: 20vh;
+    left: 46vw;
+    width: 108vw;
     height: auto; }
     .shape-container--40 .random-shape:after {
       margin: 4rem;
       color: #B64F59;
       font-size: 4rem;
-      opacity: 1;
-      content: "D"; }
+      opacity: 0.8;
+      content: "A"; }
   .shape-container--40 {
     display: none; }
     .shape-container--40 .random-shape:after {
@@ -1719,15 +1719,15 @@
 @media screen and (max-width: 539px) {
   @keyframes shape-1 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(299deg); }
+      transform: translate3d(0, 0, 0) rotate(143deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(659deg); } }
+      transform: translate3d(0, 0, 0) rotate(503deg); } }
   .shape-container--1 {
-    animation: shape-1 407s infinite linear;
+    animation: shape-1 408s infinite linear;
     position: absolute;
-    top: 100vh;
-    left: 33vw;
-    width: 82vw;
+    top: 92vh;
+    left: -14vw;
+    width: 118vw;
     height: auto; }
     .shape-container--1 .random-shape:after {
       margin: 3rem;
@@ -1737,159 +1737,159 @@
       content: "D"; }
   @keyframes shape-2 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(272deg); }
+      transform: translate3d(0, 0, 0) rotate(289deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(632deg); } }
+      transform: translate3d(0, 0, 0) rotate(649deg); } }
   .shape-container--2 {
     animation: shape-2 408s infinite linear;
     position: absolute;
-    top: 13vh;
-    left: -15vw;
-    width: 136vw;
+    top: 64vh;
+    left: -52.5vw;
+    width: 147vw;
     height: auto; }
     .shape-container--2 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
+      opacity: 1;
       content: "B"; }
   @keyframes shape-3 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(83deg); }
+      transform: translate3d(0, 0, 0) rotate(283deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(443deg); } }
+      transform: translate3d(0, 0, 0) rotate(643deg); } }
   .shape-container--3 {
-    animation: shape-3 403s infinite linear;
+    animation: shape-3 407s infinite linear;
     position: absolute;
-    top: 46vh;
-    left: -65.5vw;
-    width: 139vw;
+    top: 66vh;
+    left: 20.5vw;
+    width: 91vw;
     height: auto; }
     .shape-container--3 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.6;
+      content: "D"; }
   @keyframes shape-4 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(41deg); }
+      transform: translate3d(0, 0, 0) rotate(245deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(401deg); } }
+      transform: translate3d(0, 0, 0) rotate(605deg); } }
   .shape-container--4 {
-    animation: shape-4 404s infinite linear;
+    animation: shape-4 408s infinite linear;
     position: absolute;
-    top: 7vh;
-    left: -29.5vw;
-    width: 147vw;
+    top: 25vh;
+    left: 16.5vw;
+    width: 55vw;
     height: auto; }
     .shape-container--4 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
-      content: "A"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-5 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(65deg); }
+      transform: translate3d(0, 0, 0) rotate(296deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(425deg); } }
+      transform: translate3d(0, 0, 0) rotate(656deg); } }
   .shape-container--5 {
-    animation: shape-5 403s infinite linear;
+    animation: shape-5 405s infinite linear;
     position: absolute;
-    top: 2vh;
-    left: 8vw;
-    width: 66vw;
+    top: 37vh;
+    left: -27vw;
+    width: 90vw;
     height: auto; }
     .shape-container--5 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
       opacity: 1;
-      content: "D"; }
+      content: "C"; }
   @keyframes shape-6 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(325deg); }
+      transform: translate3d(0, 0, 0) rotate(113deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(685deg); } }
+      transform: translate3d(0, 0, 0) rotate(473deg); } }
   .shape-container--6 {
-    animation: shape-6 402s infinite linear;
+    animation: shape-6 401s infinite linear;
     position: absolute;
-    top: 38vh;
-    left: -6vw;
-    width: 130vw;
+    top: 52vh;
+    left: -1.5vw;
+    width: 79vw;
     height: auto; }
     .shape-container--6 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
-      content: "D"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-7 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(315deg); }
+      transform: translate3d(0, 0, 0) rotate(70deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(675deg); } }
+      transform: translate3d(0, 0, 0) rotate(430deg); } }
   .shape-container--7 {
-    animation: shape-7 401s infinite linear;
+    animation: shape-7 409s infinite linear;
     position: absolute;
-    top: 82vh;
-    left: -41vw;
-    width: 124vw;
+    top: 90vh;
+    left: 30.5vw;
+    width: 111vw;
     height: auto; }
     .shape-container--7 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
-      content: "C"; }
+      opacity: 0.6;
+      content: "A"; }
   @keyframes shape-8 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(85deg); }
+      transform: translate3d(0, 0, 0) rotate(300deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(445deg); } }
+      transform: translate3d(0, 0, 0) rotate(660deg); } }
   .shape-container--8 {
-    animation: shape-8 405s infinite linear;
+    animation: shape-8 407s infinite linear;
     position: absolute;
-    top: 70vh;
-    left: -25vw;
-    width: 78vw;
+    top: 64vh;
+    left: 16.5vw;
+    width: 123vw;
     height: auto; }
     .shape-container--8 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.6;
-      content: "B"; }
+      opacity: 0.8;
+      content: "A"; }
   @keyframes shape-9 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(314deg); }
+      transform: translate3d(0, 0, 0) rotate(59deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(674deg); } }
+      transform: translate3d(0, 0, 0) rotate(419deg); } }
   .shape-container--9 {
-    animation: shape-9 404s infinite linear;
+    animation: shape-9 409s infinite linear;
     position: absolute;
-    top: 23vh;
-    left: -28vw;
-    width: 72vw;
+    top: 9vh;
+    left: 17vw;
+    width: 102vw;
     height: auto; }
     .shape-container--9 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.7;
-      content: "B"; }
+      opacity: 0.9;
+      content: "A"; }
   @keyframes shape-10 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(20deg); }
+      transform: translate3d(0, 0, 0) rotate(129deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(380deg); } }
+      transform: translate3d(0, 0, 0) rotate(489deg); } }
   .shape-container--10 {
-    animation: shape-10 404s infinite linear;
+    animation: shape-10 405s infinite linear;
     position: absolute;
-    top: 83vh;
-    left: -17.5vw;
-    width: 75vw;
+    top: 36vh;
+    left: 36.5vw;
+    width: 59vw;
     height: auto; }
     .shape-container--10 .random-shape:after {
       margin: 3rem;
@@ -1899,195 +1899,195 @@
       content: "D"; }
   @keyframes shape-11 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(83deg); }
+      transform: translate3d(0, 0, 0) rotate(249deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(443deg); } }
+      transform: translate3d(0, 0, 0) rotate(609deg); } }
   .shape-container--11 {
-    animation: shape-11 407s infinite linear;
+    animation: shape-11 401s infinite linear;
     position: absolute;
-    top: 64vh;
-    left: 53vw;
-    width: 74vw;
+    top: 1vh;
+    left: -50.5vw;
+    width: 135vw;
     height: auto; }
     .shape-container--11 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 1;
-      content: "A"; }
+      opacity: 0.6;
+      content: "C"; }
   @keyframes shape-12 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(275deg); }
+      transform: translate3d(0, 0, 0) rotate(92deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(635deg); } }
+      transform: translate3d(0, 0, 0) rotate(452deg); } }
   .shape-container--12 {
-    animation: shape-12 404s infinite linear;
+    animation: shape-12 408s infinite linear;
     position: absolute;
-    top: 23vh;
-    left: -29vw;
-    width: 114vw;
+    top: 18vh;
+    left: -23vw;
+    width: 148vw;
     height: auto; }
     .shape-container--12 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
-      content: "B"; }
+      opacity: 0.6;
+      content: "C"; }
   @keyframes shape-13 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(28deg); }
+      transform: translate3d(0, 0, 0) rotate(149deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(388deg); } }
+      transform: translate3d(0, 0, 0) rotate(509deg); } }
   .shape-container--13 {
-    animation: shape-13 409s infinite linear;
+    animation: shape-13 405s infinite linear;
     position: absolute;
-    top: 3vh;
-    left: 38vw;
-    width: 76vw;
+    top: 89vh;
+    left: -27vw;
+    width: 126vw;
     height: auto; }
     .shape-container--13 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 1;
-      content: "C"; }
+      opacity: 0.8;
+      content: "B"; }
   @keyframes shape-14 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(200deg); }
+      transform: translate3d(0, 0, 0) rotate(357deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(560deg); } }
+      transform: translate3d(0, 0, 0) rotate(717deg); } }
   .shape-container--14 {
     animation: shape-14 401s infinite linear;
     position: absolute;
-    top: 48vh;
-    left: 35.5vw;
-    width: 125vw;
+    top: 46vh;
+    left: 29vw;
+    width: 108vw;
     height: auto; }
     .shape-container--14 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.8;
-      content: "B"; }
+      opacity: 1;
+      content: "C"; }
   @keyframes shape-15 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(52deg); }
+      transform: translate3d(0, 0, 0) rotate(239deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(412deg); } }
+      transform: translate3d(0, 0, 0) rotate(599deg); } }
   .shape-container--15 {
-    animation: shape-15 409s infinite linear;
+    animation: shape-15 406s infinite linear;
     position: absolute;
-    top: 68vh;
-    left: -36.5vw;
-    width: 101vw;
+    top: 61vh;
+    left: 42vw;
+    width: 70vw;
     height: auto; }
     .shape-container--15 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.7;
-      content: "B"; }
+      opacity: 0.9;
+      content: "D"; }
   @keyframes shape-16 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(177deg); }
+      transform: translate3d(0, 0, 0) rotate(71deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(537deg); } }
+      transform: translate3d(0, 0, 0) rotate(431deg); } }
   .shape-container--16 {
-    animation: shape-16 410s infinite linear;
+    animation: shape-16 407s infinite linear;
     position: absolute;
-    top: 79vh;
-    left: 22vw;
-    width: 134vw;
+    top: 99vh;
+    left: 0.5vw;
+    width: 115vw;
     height: auto; }
     .shape-container--16 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.9;
-      content: "C"; }
+      opacity: 0.6;
+      content: "B"; }
   @keyframes shape-17 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(132deg); }
+      transform: translate3d(0, 0, 0) rotate(340deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(492deg); } }
+      transform: translate3d(0, 0, 0) rotate(700deg); } }
   .shape-container--17 {
-    animation: shape-17 407s infinite linear;
+    animation: shape-17 406s infinite linear;
     position: absolute;
-    top: 41vh;
-    left: 34.5vw;
-    width: 53vw;
+    top: 82vh;
+    left: -30.5vw;
+    width: 133vw;
     height: auto; }
     .shape-container--17 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.6;
+      opacity: 0.7;
       content: "A"; }
   @keyframes shape-18 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(8deg); }
+      transform: translate3d(0, 0, 0) rotate(322deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(368deg); } }
+      transform: translate3d(0, 0, 0) rotate(682deg); } }
   .shape-container--18 {
-    animation: shape-18 405s infinite linear;
+    animation: shape-18 410s infinite linear;
     position: absolute;
-    top: 99vh;
-    left: -32vw;
-    width: 114vw;
+    top: 85vh;
+    left: 3.5vw;
+    width: 135vw;
     height: auto; }
     .shape-container--18 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.7;
-      content: "C"; }
+      opacity: 1;
+      content: "D"; }
   @keyframes shape-19 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(157deg); }
+      transform: translate3d(0, 0, 0) rotate(86deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(517deg); } }
+      transform: translate3d(0, 0, 0) rotate(446deg); } }
   .shape-container--19 {
-    animation: shape-19 409s infinite linear;
+    animation: shape-19 405s infinite linear;
     position: absolute;
-    top: 11vh;
-    left: -50vw;
-    width: 146vw;
+    top: 24vh;
+    left: 30.5vw;
+    width: 51vw;
     height: auto; }
     .shape-container--19 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.9;
-      content: "D"; }
+      opacity: 0.6;
+      content: "A"; }
   @keyframes shape-20 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(107deg); }
+      transform: translate3d(0, 0, 0) rotate(77deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(467deg); } }
+      transform: translate3d(0, 0, 0) rotate(437deg); } }
   .shape-container--20 {
-    animation: shape-20 410s infinite linear;
+    animation: shape-20 405s infinite linear;
     position: absolute;
-    top: 64vh;
-    left: 54vw;
-    width: 76vw;
+    top: 4vh;
+    left: 59.5vw;
+    width: 81vw;
     height: auto; }
     .shape-container--20 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 1;
+      opacity: 0.8;
       content: "D"; }
   @keyframes shape-21 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(7deg); }
+      transform: translate3d(0, 0, 0) rotate(272deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(367deg); } }
+      transform: translate3d(0, 0, 0) rotate(632deg); } }
   .shape-container--21 {
-    animation: shape-21 401s infinite linear;
+    animation: shape-21 410s infinite linear;
     position: absolute;
-    top: 65vh;
-    left: -48.5vw;
-    width: 115vw;
+    top: 51vh;
+    left: 42vw;
+    width: 90vw;
     height: auto; }
     .shape-container--21 .random-shape:after {
       margin: 3rem;
@@ -2097,76 +2097,76 @@
       content: "B"; }
   @keyframes shape-22 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(37deg); }
+      transform: translate3d(0, 0, 0) rotate(326deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(397deg); } }
+      transform: translate3d(0, 0, 0) rotate(686deg); } }
   .shape-container--22 {
-    animation: shape-22 401s infinite linear;
+    animation: shape-22 408s infinite linear;
     position: absolute;
-    top: 50vh;
-    left: -26.5vw;
-    width: 109vw;
+    top: 74vh;
+    left: -54.5vw;
+    width: 131vw;
     height: auto; }
     .shape-container--22 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
       opacity: 1;
-      content: "C"; }
+      content: "B"; }
   @keyframes shape-23 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(21deg); }
+      transform: translate3d(0, 0, 0) rotate(189deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(381deg); } }
+      transform: translate3d(0, 0, 0) rotate(549deg); } }
   .shape-container--23 {
-    animation: shape-23 409s infinite linear;
+    animation: shape-23 406s infinite linear;
     position: absolute;
-    top: 38vh;
-    left: 12.5vw;
-    width: 109vw;
+    top: 44vh;
+    left: 56vw;
+    width: 72vw;
     height: auto; }
     .shape-container--23 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.6;
+      opacity: 0.8;
       content: "B"; }
   @keyframes shape-24 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(252deg); }
+      transform: translate3d(0, 0, 0) rotate(184deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(612deg); } }
+      transform: translate3d(0, 0, 0) rotate(544deg); } }
   .shape-container--24 {
-    animation: shape-24 404s infinite linear;
+    animation: shape-24 407s infinite linear;
     position: absolute;
-    top: 6vh;
-    left: 9.5vw;
-    width: 95vw;
+    top: 97vh;
+    left: -40.5vw;
+    width: 113vw;
     height: auto; }
     .shape-container--24 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.6;
-      content: "C"; }
+      opacity: 0.9;
+      content: "A"; }
   @keyframes shape-25 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(160deg); }
+      transform: translate3d(0, 0, 0) rotate(50deg); }
     100% {
-      transform: translate3d(0, 0, 0) rotate(520deg); } }
+      transform: translate3d(0, 0, 0) rotate(410deg); } }
   .shape-container--25 {
-    animation: shape-25 402s infinite linear;
+    animation: shape-25 404s infinite linear;
     position: absolute;
-    top: 66vh;
-    left: -11.5vw;
-    width: 83vw;
+    top: 15vh;
+    left: -19.5vw;
+    width: 117vw;
     height: auto; }
     .shape-container--25 .random-shape:after {
       margin: 3rem;
       color: #B64F59;
       font-size: 3rem;
-      opacity: 0.7;
-      content: "B"; }
+      opacity: 1;
+      content: "C"; }
   .shape-container--25 {
     display: none; }
     .shape-container--25 .random-shape:after {

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import MediaQuery from 'react-responsive';
 
 import SimpleTextPage from '../04-template/simple-text-page';
-import PlaceholderText from '../01-atom/placeholder/text';
-import Breakpoints from "../00-style/breakpoints";
 
 class PrivacyPolicy extends Component {
 

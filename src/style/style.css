@@ -187,6 +187,15 @@ small, .font_small {font-size: 0.618em;}
   text-decoration: none;
 }
 
+.bm-item-list #privacy-policy {
+    color: rgba(182, 79, 89,0.8);
+    font-size: 1.6rem;
+    font-family: 'raleway';
+    font-weight: 100;
+    margin-right: 16px;
+    margin-top: 32px;
+}
+
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(255, 255, 255, 0.3) !important;
