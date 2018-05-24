@@ -19,6 +19,7 @@ import Team from './components/05-page/team';
 import Services from './components/05-page/services';
 import OurPartners from './components/05-page/our-partners';
 import ContactUs from './components/05-page/contact-us';
+import PrivacyPolicy from './components/05-page/privacy-policy';
 
 
 class App extends React.Component {
@@ -58,6 +59,7 @@ class App extends React.Component {
                     transitionLeaveTimeout={500}>
                     <div key={location.pathname}>
                       <Switch location={location}>
+                        <Route path="/privacy-policy" component={PrivacyPolicy} />
                         <Route path="/contact-us" component={ContactUs} />
                         <Route path="/our-partners" component={OurPartners} />
                         <Route path="/services" component={Services} />
